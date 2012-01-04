@@ -125,7 +125,7 @@
             <div id="vojo-header" class="container">
                 <div class="row">
                     <div class="eightcol">
-                        <a href="<?php print $front_page?>"><img src="/sites/all/themes/vojo_basic/images/vojo/logo.png"></a>
+                        <a href="<?php print $front_page?>"><img src="/<?php print drupal_get_path('theme','vojo_generic'); ?>/images/vojo/logo.png"></a>
                     </div>                    
                     <div class="fourcol last">
                         <?php print $header ?>
@@ -155,7 +155,7 @@
         
                         <?php if ($tabs): ?>
                           <div class="tabs"><?php print $tabs; ?></div>
-                        <?php endif; ?>
+                        <?php endif; ?>http://localhost:5011/en
                 
                         <div id="vojo-content-area">
                             <?php print $content; ?>
