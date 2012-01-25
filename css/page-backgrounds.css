@@ -7,11 +7,14 @@
  * unnecessary. Instead, use the Faux Columns method described in the following
  * ALA article:
  *   http://www.alistapart.com/articles/fauxcolumns/
+ *
+ * Palette from:
+ *   http://www.colourlovers.com/palette/444487/Curiosity_Killed
  */
 
 
 body {
-    background: #eeeeee;
+    background: #EFFFCD;
 }
 
 #vojo-page-wrapper {
@@ -21,29 +24,40 @@ body {
 }
 
 #vojo-header {
-    background: #eeeeee;
+    background: #2E2633;
+    color: #ffffff;
+    padding-bottom: 1em;
 }
 
 #vojo-header .section {
 }
 
 #vojo-main-wrapper {
-    background: #ffffff;
+    background: #EFFFCD;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 #vojo-content {
+    margin-bottom: 1em;
 }
 
 #vojo-sidebar {
+    
 }
 
 #vojo-footer {
     padding-top: 1em;
-    padding-bottom: 4em;
-    background: #eeeeee;
+    padding-bottom: 1em;
+    background: #2E2633;
+    color: #EFFFCD;
 }
 
 #vojo-footer .section {
+}
+
+#vojo-page-closure {
+    padding-top: 1em;
+    padding-bottom: 4em;
+    background: #555152;
 }

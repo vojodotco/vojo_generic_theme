@@ -3,4 +3,21 @@
  * Views Styling
  */
 
+/** list of all groups **/
+
+.view-id-vojo_og {
+    margin-top: 1em;
+}
+
+.view-id-vojo_og ul {
+    margin: 0em;
+    padding: 0em;
+    list-style: none;
+}
+
+.view-id-vojo_og ul li {
+    margin: 0em;
+    padding: 0.5em 0em;
+}
+
 

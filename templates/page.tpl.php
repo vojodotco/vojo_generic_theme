@@ -106,7 +106,13 @@
  * @see zen_preprocess()
  * @see zen_process()
  */
+
+// Try to figure out what group we are in!
+//$vojo_group_nid = vojo_og_get_group_nid();    //TODO: generate pick menu based on this?
+//print "in group ".$vojo_group_nid;        
+ 
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 
@@ -155,7 +161,7 @@
         
                         <?php if ($tabs): ?>
                           <div class="tabs"><?php print $tabs; ?></div>
-                        <?php endif; ?>http://localhost:5011/en
+                        <?php endif; ?>
                 
                         <div id="vojo-content-area">
                             <?php print $content; ?>
@@ -179,7 +185,13 @@
                 </div>
             </div>
     
-            <?php print $page_closure; ?>
+            <div id="vojo-page-closure" class="container">
+                <div class="row">
+                    <div class="twelvecol last">
+                        <?php print $page_closure; ?>
+                    </div>
+                </div>
+            </div>
     
         </div>
 
