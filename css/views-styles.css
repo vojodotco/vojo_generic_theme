@@ -21,3 +21,28 @@
 }
 
 
+/** list of stories **/
+
+.vojo-story-list ul {
+    list-style: none;
+    margin: 1em 0em;
+    padding: 0em;
+}
+.vojo-story-list ul li {
+    margin-bottom: 1em;
+}
+
+.vojo-story-list ul h2 {
+    font-size: 1.2em;
+}
+
+.vojo-story-list ul li .links,
+.vojo-story-list ul li .meta {
+    font-size: 0.8em;
+    color: #333333;
+}
+
+.vojo-story-list ul li .meta .terms {
+    font-size: 0.6em;
+    font-style: italic;
+}
