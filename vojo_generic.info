@@ -70,10 +70,10 @@ conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
   ; add a line line to this file, and then add the new variable to your
   ; page.tpl.php template.
 regions[header]         = Header
-regions[navigation]     = Navigation bar
-regions[sidebar]  = First sidebar
+regions[navigation]     = Navigation Bar
+regions[sidebar]        = Sidebar
 regions[footer]         = Footer
-regions[page_closure]   = Page closure
+regions[page_closure]   = Page Closure
 
   ; Various page elements output by the theme can be toggled on and off. The
   ; "features" control which of these check boxes display on the
