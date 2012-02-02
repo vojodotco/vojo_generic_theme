@@ -177,6 +177,7 @@
                 
             </div>
     
+            <?php if ($footer) { ?>
             <div id="vojo-footer" class="container">
                 <div class="row">
                     <div class="twelvecol last">
@@ -184,7 +185,9 @@
                     </div>
                 </div>
             </div>
+            <?php } ?>
     
+            <?php if ($page_closure) { ?>
             <div id="vojo-page-closure" class="container">
                 <div class="row">
                     <div class="twelvecol last">
@@ -192,6 +195,7 @@
                     </div>
                 </div>
             </div>
+            <?php } ?>
     
         </div>
 

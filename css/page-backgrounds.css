@@ -14,7 +14,7 @@
 
 
 body {
-    background: #555152;
+    background: rgb(208,228,241);
 }
 
 #vojo-page-wrapper {
@@ -24,7 +24,7 @@ body {
 }
 
 #vojo-header {
-    background: #2E2633;
+    background: rgb(74,176,226);
     color: #ffffff;
     padding-bottom: 1em;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 #vojo-main-wrapper {
-    background: #EFFFCD;
+    background: rgb(255,255,255);
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -49,8 +49,7 @@ body {
 #vojo-footer {
     padding-top: 1em;
     padding-bottom: 1em;
-    background: #2E2633;
-    color: #EFFFCD;
+    background: rgb(74,176,226);
 }
 
 #vojo-footer .section {
@@ -59,5 +58,4 @@ body {
 #vojo-page-closure {
     padding-top: 1em;
     padding-bottom: 4em;
-    background: #555152;
 }
