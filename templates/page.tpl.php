@@ -82,7 +82,7 @@
  * Footer/closing data:
  * - $footer_message: The footer message as defined in the admin settings.
  * - $closure: Final closing markup from any modules that have altered the page.
- *   This variable should always be output last, after all other dynamic content.
+ *   This variable should always be output, after all other dynamic content.
  *
  * Helper variables:
  * - $classes_array: Array of html class attribute values. It is flattened
@@ -124,34 +124,37 @@
 </head>
 <body class="<?php print $classes; ?>">
 
-    <div id="vojo-page-wrapper">
-  
-        <div id="vojo-page">
+    <div id="vojo-page">
 
-            <div id="vojo-header" class="container">
+        <div id="vojo-header">
+            <div class="container">
                 <div class="row">
-                    <div class="eightcol">
+                    <div class="span8">
                         <a href="<?php print $front_page?>"><img src="/<?php print drupal_get_path('theme','vojo_generic'); ?>/images/vojo/logo.png"></a>
                     </div>                    
-                    <div class="fourcol last">
+                    <div class="span4">
                         <?php print $header ?>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div id="vojo-navigation" class="container">
+        <div id="vojo-navigation">
+            <div class="container">
                 <div class="row">
-                    <div class="twelvecol last">
+                    <div class="span12">
                         <?php print $navigation ?>
                     </div>
                 </div>
             </div>
-        
-            <div id="vojo-main-wrapper" class="container">
-            
+        </div>
+
+        <div id="vojo-main-wrapper">
+            <div class="container">
+
                 <div class="row">
             
-                    <div id="vojo-content" class="eightcol">
+                    <div id="vojo-content" class="span8">
         
                         <?php if ($title): ?>
                             <h1 class="title"><?php print $title; ?></h1>
@@ -169,36 +172,38 @@
                     
                     </div>
                     
-                    <div id="vojo-sidebar" class="fourcol last">
+                    <div id="vojo-sidebar" class="span4">
                         <?php print $sidebar; ?>
                     </div>
-                    
-                </div>
                 
             </div>
+            
+        </div>
     
-            <?php if ($footer) { ?>
-            <div id="vojo-footer" class="container">
+        <?php if ($footer) { ?>
+        <div id="vojo-footer">
+            <div class="container">
                 <div class="row">
-                    <div class="twelvecol last">
+                    <div class="span12">
                         <?php print $footer; ?>
                     </div>
                 </div>
             </div>
-            <?php } ?>
+        </div>
+        <?php } ?>
     
-            <?php if ($page_closure) { ?>
-            <div id="vojo-page-closure" class="container">
+        <?php if ($page_closure) { ?>
+        <div id="vojo-page-closure">
+            <div class="container">
                 <div class="row">
-                    <div class="twelvecol last">
+                    <div class="span12">
                         <?php print $page_closure; ?>
                     </div>
                 </div>
             </div>
-            <?php } ?>
-    
         </div>
-
+        <?php } ?>
+    
         <?php print $closure; ?>
 
     </div>

@@ -25,10 +25,6 @@ base theme = zen
 stylesheets[all][]   = css/html-reset.css
 
 ; placed here to allow topic-css files to override css resets in 1140.css
-stylesheets[all][]   = css/1140-cssgrid/1140.css
-stylesheets[all][]   = css/1140-cssgrid/styles.css
-conditional-stylesheets[if IE][all][] = css/1140-cssgrid/ie.css
-
 stylesheets[all][]   = css/wireframes.css
 stylesheets[all][]   = css/page-backgrounds.css
 stylesheets[all][]   = css/tabs.css
@@ -48,7 +44,10 @@ stylesheets[all][]   = css/fields.css
 
 stylesheets[all][]   = css/layout-liquid.css
 
-scripts[] = js/1140-cssgrid/css3-mediaqueries.js
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/bootstrap-responsive.min.css
+
+scripts[] = js/bootstrap.min.js
 
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
