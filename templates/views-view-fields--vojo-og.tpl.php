@@ -28,6 +28,7 @@ $group_nid = $fields['nid']->raw;
 ?>
 
 <div class="vojo-group-summary">
+    <img src="<?php print vojo_og_theme_screenshot_url($group_nid); ?>" align="left"/>
     <h3><?php print $fields['title']->content ?></h3>
     <small><?php print $fields['description']->content ?></small>
     <div class="vojo-group-posts"><?php print $fields['post_count']->content ?></div>

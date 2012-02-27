@@ -46,3 +46,11 @@
     font-size: 0.6em;
     font-style: italic;
 }
+
+/** homepage list of all groups **/
+.vojo-group-summary {
+    margin-bottom: 1em;
+}
+.vojo-group-summary img {
+    margin-right: 1em;
+}
