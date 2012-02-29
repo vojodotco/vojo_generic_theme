@@ -140,6 +140,7 @@
             </div>
         </div>
 
+        <?php if($navigation) { ?>
         <div id="vojo-navigation">
             <div class="container">
                 <div class="row">
@@ -149,6 +150,7 @@
                 </div>
             </div>
         </div>
+        <?php } ?>
 
         <div id="vojo-main-wrapper">
             <div class="container">
