@@ -132,3 +132,24 @@ form thead th {
 form tbody th {
   border-bottom: 1px solid #ccc;
 }
+
+ul.ui-autocomplete {
+	background: #ffffff;
+	list-style: none;
+	display: inline-block;
+	padding: 0em;
+	margin: 0em;
+	border: 1px solid #666666;
+}
+ul.ui-autocomplete li {
+    cursor:pointer;cursor:hand;
+	font-size: 1.0em;
+	font-style: italic;
+}
+ul.ui-autocomplete li a {
+    display: block;
+	padding: 0.3em;
+}
+ul.ui-autocomplete li a.ui-state-hover {
+	background-color: #eeeeee;
+}
