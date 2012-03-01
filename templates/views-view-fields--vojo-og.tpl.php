@@ -25,10 +25,11 @@
  */
 
 $group_nid = $fields['nid']->raw;
+
 ?>
 
 <div class="vojo-group-summary">
-    <img src="<?php print vojo_og_theme_screenshot_url($group_nid); ?>" align="left"/>
+    <a href="<?php print drupal_get_path_alias("node/".$group_nid); ?>"><img src="<?php print vojo_og_theme_screenshot_url($group_nid); ?>" align="left" width="150" height="90"/></a>
     <h3><?php print $fields['title']->content ?></h3>
     <small><?php print $fields['description']->content ?></small>
     <div class="vojo-group-posts"><?php print $fields['post_count']->content ?></div>
