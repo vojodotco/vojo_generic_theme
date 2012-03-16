@@ -20,10 +20,32 @@ body {
 #vojo-header {
     background: rgb(74,176,226);
     color: #ffffff;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
 #vojo-header .section {
+}
+
+#vojo-header .container {
+    position: relative;
+}
+
+#vojo-header a.vojo-link {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#vojo-header a.vojo-link,
+#vojo-header a.vojo-link:link {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+#vojo-header a.vojo-link:hover {
+    color: yellow;
 }
 
 #vojo-main-wrapper {

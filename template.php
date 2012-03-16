@@ -96,14 +96,24 @@ function vojo_generic_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function vojo_generic_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
-
-  // To remove a class from $classes_array, use array_diff().
-  //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
+  // If we're in a group context, use group logo and header color provided by
+  // fields in the group node.
+  $group_node = og_get_group_context();
+  if (!empty($group_node->og_theme) && $group_node->field_group_logo[0]['filepath']) {
+    $vars['home_link'] = $vars['base_path'] . 'node/'. $group_node->nid;
+    $vars['logo'] = '<img src="'. $vars['base_path'] . $group_node->field_group_logo[0]['filepath'] .'" />';
+  }
+  else {
+    $vars['home_link'] = $vars['base_path'];
+    $vars['logo'] = '<img src="'. $vars['base_path'] . $vars['directory'] .'/images/vojo/logo.png" />';   
+  }
+  // If the colorpicker module is present, the vozmob_og feature will provide a
+  // field to the group node to select the background color of the header.
+  if (isset($group_node->field_group_header_bg_color)) {
+    $vars['header_bg_color'] = $group_node->field_group_header_bg_color[0]['value'];
+  }
 }
-// */
 
 /**
  * Override or insert variables into the node templates.

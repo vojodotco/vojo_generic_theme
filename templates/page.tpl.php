@@ -110,7 +110,6 @@
 // Try to figure out what group we are in!
 //$vojo_group_nid = vojo_og_get_group_nid();    //TODO: generate pick menu based on this?
 //print "in group ".$vojo_group_nid;        
- 
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -127,11 +126,14 @@
 
     <div id="vojo-page">
 
-        <div id="vojo-header">
+        <div id="vojo-header" style="<?php print 'background-color:'. $header_bg_color; ?>">
             <div class="container">
                 <div class="row">
                     <div class="span8">
-                        <a href="<?php print $front_page?>"><img src="/<?php print drupal_get_path('theme','vojo_generic'); ?>/images/vojo/logo.png"></a>
+                        <a href="<?php print $home_link; ?>"><?php print $logo; ?></a>
+                        <?php if(!$is_front): ?>
+                          <a class="vojo-link" href="<?php print $base_path; ?>"><?php print t('« Return to Vojo home'); ?></a>
+                        <?php endif; ?>
                     </div>                    
                     <div class="span4">
                         <?php print $header ?>
@@ -158,7 +160,6 @@
                 <div class="row">
             
                     <div id="vojo-content" class="span8">
-        
                         <?php if ($title): ?>
                             <h1 class="title"><?php print $title; ?></h1>
                         <?php endif; ?>
