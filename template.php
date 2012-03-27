@@ -100,7 +100,8 @@ function vojo_generic_preprocess_page(&$vars, $hook) {
   // If we're in a group context, use group logo and header color provided by
   // fields in the group node.
   $group_node = og_get_group_context();
-  if (!empty($group_node->og_theme) && $group_node->field_group_logo[0]['filepath']) {
+
+  if (!empty($group_node) && $group_node->field_group_logo[0]['filepath']) {
     $vars['home_link'] = $vars['base_path'] . 'node/'. $group_node->nid;
     $vars['logo'] = '<img src="'. $vars['base_path'] . $group_node->field_group_logo[0]['filepath'] .'" />';
   }
