@@ -23,13 +23,22 @@
  *
  * @ingroup views_templates
  */
-
 $group_nid = $fields['nid']->raw;
 
+// If group has an uploaded logo, display that instead of mini theme screenshot. 
+if (isset($fields['field_group_logo_fid'])) {
+  $file = field_file_load($fields['field_group_logo_fid']->raw);
+  $image_path = imagecache_create_url('group_logo_med', $file['filepath']);
+  $group_logo = $image_path;
+}
 ?>
 
 <div class="vojo-group-summary">
-    <a href="<?php print drupal_get_path_alias("node/".$group_nid); ?>"><img src="<?php print vojo_og_theme_screenshot_url($group_nid); ?>" align="left" width="150" height="90"/></a>
+    <span class="group-logo-listing">
+        <a href="<?php print drupal_get_path_alias("node/".$group_nid); ?>">
+            <img src="<?php if ($group_logo) { print $group_logo; } else { print vojo_og_theme_screenshot_url($group_nid); } ?>" />
+        </a>
+    </span>
     <h3><?php print $fields['title']->content ?></h3>
     <small><?php print $fields['description']->content ?></small>
     <div class="vojo-group-posts"><?php print $fields['post_count']->content ?></div>

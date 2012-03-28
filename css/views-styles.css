@@ -18,9 +18,15 @@
 .view-id-vojo_og ul li {
     margin: 0em;
     padding: 0.5em 0em;
+    overflow: hidden;
 }
-
-
+.view-id-vojo_og .group-logo-listing {
+    display: block;
+    width: 150px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
 /** list of stories **/
 
 .vojo-story-list ul {
