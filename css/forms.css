@@ -153,3 +153,8 @@ ul.ui-autocomplete li a {
 ul.ui-autocomplete li a.ui-state-hover {
 	background-color: #eeeeee;
 }
+
+/* Override twiiter bootstrap fixed width of fields */
+.form-item input, .form-item textarea, .form-item select, .form-item .uneditable-input {
+  width: auto;
+}
