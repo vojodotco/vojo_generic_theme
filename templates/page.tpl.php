@@ -132,7 +132,7 @@
                     <div class="span8">
                         <a href="<?php print $home_link; ?>"><?php print $logo; ?></a>
                         <?php if(!$is_front): ?>
-                          <a class="vojo-link" href="<?php print $base_path; ?>"><?php print t('« Return to Vojo home'); ?></a>
+                          <a class="vojo-link" href="<?php print $base_path; ?>"><?php print t('« Return to Vojo.co'); ?></a>
                         <?php endif; ?>
                     </div>                    
                     <div class="span4">
@@ -160,6 +160,7 @@
                 <div class="row">
             
                     <div id="vojo-content" class="span8">
+                        <?php // print $breadcrumb; ?>
                         <?php if ($title): ?>
                             <h1 class="title"><?php print $title; ?></h1>
                         <?php endif; ?>

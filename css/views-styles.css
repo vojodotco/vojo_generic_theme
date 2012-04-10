@@ -42,15 +42,10 @@
     font-size: 1.2em;
 }
 
-.vojo-story-list ul li .links,
-.vojo-story-list ul li .meta {
-    font-size: 0.8em;
-    color: #333333;
-}
-
 .vojo-story-list ul li .meta .terms {
-    font-size: 0.6em;
     font-style: italic;
+    font-size: 0.9em;
+    color: #333333;
 }
 
 /** homepage list of all groups **/

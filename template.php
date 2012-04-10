@@ -103,7 +103,8 @@ function vojo_generic_preprocess_page(&$vars, $hook) {
 
   if (!empty($group_node) && $group_node->field_group_logo[0]['filepath']) {
     $vars['home_link'] = $vars['base_path'] . 'node/'. $group_node->nid;
-    $vars['logo'] = '<img src="'. $vars['base_path'] . $group_node->field_group_logo[0]['filepath'] .'" />';
+    $image_path = imagecache_create_url('group_logo_large', $group_node->field_group_logo[0]['filepath']);
+    $vars['logo'] = '<img src="'. $image_path .'" />';
   }
   else {
     $vars['home_link'] = $vars['base_path'];

@@ -20,7 +20,7 @@ li a.active {
     display: block;
     float: none;
     height: auto;
-    background: rgb(56,151,229);
+    background: #ddd;
 }
 
 .region-navigation {
@@ -69,6 +69,7 @@ li a.active {
 #block-vojo_og-generic-group-menu{
     margin-bottom: 0em;
     margin: 0.5em 0em;
+    padding-bottom: 1px;
 }
 
 #block-vojo_og-generic-group-menu h2 {
@@ -89,4 +90,7 @@ li a.active {
     display: inline-block;
     list-style-type: none;
     list-style-image: none;
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: bold;
 }

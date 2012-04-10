@@ -34,7 +34,7 @@ body {
 #vojo-header a.vojo-link {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: -16px;
 }
 #vojo-header a.vojo-link,
 #vojo-header a.vojo-link:link {
@@ -45,13 +45,15 @@ body {
     font-weight: bold;
 }
 #vojo-header a.vojo-link:hover {
-    color: yellow;
+    text-decoration: underline;
 }
-
+.group-logo-sidebar {
+    float: left;
+}
 #vojo-main-wrapper {
     background: rgb(255,255,255);
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0;
 }
 
 #vojo-content {
@@ -65,7 +67,8 @@ body {
 #vojo-footer {
     padding-top: 1em;
     padding-bottom: 1em;
-    background: rgb(74,176,226);
+    background-color: #f1f1f1;
+    border-top: #ddd solid 3px;
 }
 
 #vojo-footer .section {

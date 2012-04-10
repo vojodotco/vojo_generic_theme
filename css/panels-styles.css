@@ -3,4 +3,15 @@
  * Panels Styling
  */
 
-
+#block-vojo_og-vojo-group-details .item-list ul {
+  padding-left: 0;
+}
+#block-vojo_og-vojo-group-details .item-list ul li {
+  border-bottom: #ddd solid 1px;
+  padding: 5px;
+  list-style-type: none;
+  margin-left: 0;
+}
+#block-vojo_og-vojo-group-details .item-list ul li.last {
+  border-bottom: none;
+}
