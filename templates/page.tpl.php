@@ -130,9 +130,15 @@
             <div class="container">
                 <div class="row">
                     <div class="span8">
-                        <a href="<?php print $home_link; ?>"><?php print $logo; ?></a>
+                      <?php if(!$title_group): ?>
+                        <a  id="vojo-logo" href="<?php print $base_path; ?>"><?php print $logo; ?></a>
+                      <?php endif; ?>
+                        <?php if (!$is_front && $title_group): ?>
+                            <a  id="vojo-logo" href="<?php print $home_link; ?>"><?php print $group_logo; ?></a>
+                            <h1 class="title"><a href="<?php print $home_link; ?>" title="Return to <?php print $title_group; ?>"/> <?php print $title_group; ?></a></h1>
+                        <?php endif; ?>
                         <?php if(!$is_front): ?>
-                          <a class="vojo-link" href="<?php print $base_path; ?>"><?php print t('« Return to Vojo.co'); ?></a>
+                          <a class="vojo-link" href="<?php print $base_path; ?>"><?php print t('Return to Vojo.co »'); ?></a>
                         <?php endif; ?>
                     </div>                    
                     <div class="span4">
@@ -161,12 +167,12 @@
             
                     <div id="vojo-content" class="span8">
                         <?php // print $breadcrumb; ?>
-                        <?php if ($title): ?>
-                            <h1 class="title"><?php print $title; ?></h1>
-                        <?php endif; ?>
+  
                 
                         <?php print $messages; ?>
-        
+                        <?php if ($title != $title_group): ?>
+                            <h1 class="title"><?php print $title; ?></h1>
+                        <?php endif; ?>
                         <?php if ($tabs): ?>
                           <div class="tabs"><?php print $tabs; ?></div>
                         <?php endif; ?>

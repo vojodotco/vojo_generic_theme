@@ -47,6 +47,21 @@ body {
 #vojo-header a.vojo-link:hover {
     text-decoration: underline;
 }
+#vojo-logo /* Wrapping link for logo */ {
+  margin: 0;
+  padding: 0;
+    vertical-align: middle;
+}
+#vojo-header h1.title {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+#vojo-logo img {
+  vertical-align: bottom;
+  display: inline;
+    vertical-align: middle;
+}
 .group-logo-sidebar {
     float: left;
 }

@@ -101,15 +101,15 @@ function vojo_generic_preprocess_page(&$vars, $hook) {
   // fields in the group node.
   $group_node = og_get_group_context();
 
+  if ($group_node) {
+    $vars['title_group'] = $group_node->title;
+  }
   if (!empty($group_node) && $group_node->field_group_logo[0]['filepath']) {
     $vars['home_link'] = $vars['base_path'] . 'node/'. $group_node->nid;
     $image_path = imagecache_create_url('group_logo_large', $group_node->field_group_logo[0]['filepath']);
-    $vars['logo'] = '<img src="'. $image_path .'" />';
+    $vars['group_logo'] = '<img src="'. $image_path .'" />';
   }
-  else {
-    $vars['home_link'] = $vars['base_path'];
-    $vars['logo'] = '<img src="'. $vars['base_path'] . $vars['directory'] .'/images/vojo/logo.png" />';   
-  }
+  $vars['logo'] = '<img src="'. $vars['base_path'] . $vars['directory'] .'/images/vojo/logo.png" />';
   // If the colorpicker module is present, the vozmob_og feature will provide a
   // field to the group node to select the background color of the header.
   if (isset($group_node->field_group_header_bg_color)) {
