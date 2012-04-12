@@ -3,15 +3,25 @@
  * Panels Styling
  */
 
-#block-vojo_og-vojo-group-details .item-list ul {
+#block-vojo_og-vojo-group-details .item-list ul,
+.pane-vojo-og-vojo-group-details .item-list ul {
   padding-left: 0;
 }
-#block-vojo_og-vojo-group-details .item-list ul li {
+#block-vojo_og-vojo-group-details .item-list ul li,
+.pane-vojo-og-vojo-group-details .item-list ul li {
   border-bottom: #ddd solid 1px;
   padding: 5px;
   list-style-type: none;
   margin-left: 0;
 }
-#block-vojo_og-vojo-group-details .item-list ul li.last {
+#block-vojo_og-vojo-group-details .item-list ul li.last,
+.pane-vojo-og-vojo-group-details .item-list ul li.last {
   border-bottom: none;
+}
+
+/* Vojo Right sidebar layout */
+#vojo-content .panel-content-area {
+    width: 770px;
+    float: left;
+    margin-left: 0;
 }

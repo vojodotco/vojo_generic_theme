@@ -79,3 +79,20 @@
 .preview .node /* Preview of the content before submitting new or updated content */ {
   /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
 }
+.colorbox .galleryformatter-view-full {
+  position: absolute;
+  top: 0;
+  right: 99999px;
+}
+#cboxTitle {
+  position: relative;
+  top: 10px;
+}
+.pane-field-image {
+  overflow: hidden;
+}
+.pane-field-image .colorbox .imagecache {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

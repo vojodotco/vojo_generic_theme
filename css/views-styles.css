@@ -55,3 +55,75 @@
 .vojo-group-summary img {
     margin-right: 1em;
 }
+
+/** Browse stories **/
+.view-display-id-vojo_group_browse_stories .views-row {
+    float: left;
+    width: 245px;
+    height: 245px;
+    margin-right: 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    color: #fff;
+    background-color: #333;
+}
+.view-display-id-vojo_group_browse_stories .views-row .views-field-field-image-fid {
+    background-color: #333;
+    width: 245px;
+    height: 245px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.view-display-id-vojo_group_browse_stories .views-field-nothing {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.view-display-id-vojo_group_browse_stories .views-field-nothing p {
+    margin-bottom: 0;
+}
+.view-display-id-vojo_group_browse_stories .views-row a {
+  /*  background-color: #000; */
+    color: #fff;
+    display: block;
+    padding: 1px 10px 3px;
+    text-shadow: 1px 2px 3px 0.5;
+    opacity: 0.8;
+}
+.view-display-id-vojo_group_browse_stories .views-row a.imagecache {
+    display: block;
+    padding: 0;
+    opacity: 1;
+}
+.view-display-id-vojo_group_browse_stories .views-row .views-field-nothing p a {
+   /* background: rgba(000, 000, 000, 0.50); */
+    padding-bottom: 10px;
+}
+.view-display-id-vojo_group_browse_stories .views-row:hover .views-field-nothing a,
+.view-display-id-vojo_group_browse_stories .views-row .views-field-nothing a:hover {
+    background: rgba(51, 51, 51, 0.6);
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+}
+.view-display-id-vojo_group_browse_stories .views-row a.imagecache {
+    z-index: 1000;
+    opacity: 1;
+}
+.view-display-id-vojo_group_browse_stories .views-row:hover a.imagecache {
+    position: relative;
+    z-index: 0;
+}
+
+/* Float images in views teasers left */
+.views-row .field-field-image .field-item {
+    display: none;
+    float: left;
+    margin-right: 10px;
+}
+.views-row .field-field-image .field-item:first-child {
+    display: block;
+}

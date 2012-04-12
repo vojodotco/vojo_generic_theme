@@ -165,7 +165,7 @@
 
                 <div class="row">
             
-                    <div id="vojo-content" class="span8">
+                    <div id="vojo-content" class="<?php if ($sidebar) { print 'span8'; } else { print 'span12'; } ?>">
                         <?php // print $breadcrumb; ?>
   
                 
@@ -182,10 +182,11 @@
                         </div>
                     
                     </div>
-                    
+                    <?php if($sidebar): ?>
                     <div id="vojo-sidebar" class="span4">
                         <?php print $sidebar; ?>
                     </div>
+                    <?php endif; ?>
                 
             </div>
             

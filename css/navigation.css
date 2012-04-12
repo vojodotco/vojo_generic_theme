@@ -66,7 +66,7 @@ li a.active {
 
 /** Group nav menu **/
 
-#block-vojo_og-generic-group-menu{
+#block-vojo_og-generic-group-menu {
     margin-bottom: 0em;
     margin: 0.5em 0em;
     padding-bottom: 1px;
@@ -93,4 +93,8 @@ li a.active {
     margin-right: 8px;
     font-size: 16px;
     font-weight: bold;
+}
+#block-vojo_og-generic-group-menu ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
 }

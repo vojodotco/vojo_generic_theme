@@ -115,6 +115,9 @@ function vojo_generic_preprocess_page(&$vars, $hook) {
   if (isset($group_node->field_group_header_bg_color)) {
     $vars['header_bg_color'] = $group_node->field_group_header_bg_color[0]['value'];
   }
+  if (!$vars['show_blocks']) {
+    $vars['sidebar'] = '';
+  }
 }
 
 /**
@@ -125,18 +128,19 @@ function vojo_generic_preprocess_page(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function vojo_generic_preprocess_node(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
 
-  // Optionally, run node-type-specific preprocess functions, like
-  // vojo_generic_preprocess_node_page() or vojo_generic_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $vars['node']->type;
-  if (function_exists($function)) {
-    $function($vars, $hook);
+  if (module_exists('uploadterm') && module_exists('taxonomy_image')) {
+    // media terms
+    $term_image_links = array();
+    foreach ($vocabulary[variable_get('uploadterm_vocabulary', 0)] as $term) {
+      $term_image_links[] = l(taxonomy_image_display($term['tid']), $term['path'], array('html' => TRUE)); // can add size here
+    }
+    $vars['mediaterms'] = theme('item_list', $term_image_links, NULL, 'ul', array('class' => 'links inline media'));
   }
+
 }
-// */
+
 
 /**
  * Override or insert variables into the comment templates.
