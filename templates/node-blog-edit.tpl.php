@@ -46,8 +46,6 @@ drupal_add_js(drupal_get_path('theme', 'cdh_juarez') . '/js/location-autocomplet
 
     <?php print drupal_render($form['taxonomy']); ?>
 
-    <input type="hidden" name="og_groups[<?php print $group_node_id ?>]" id="edit-og-groups-<?php print $group_node_id ?>" value="<?php print $group_node_id ?>" class="form-checkbox og-audience">
-
     <?php print drupal_render($form); ?>
 
 </div>
