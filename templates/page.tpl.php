@@ -131,7 +131,7 @@
                 <div class="row">
                     <div class="span8">
                       <?php if(!$title_group): ?>
-                        <a  id="vojo-logo" href="<?php print $base_path; ?>"><?php print $logo; ?></a>
+                        <a  id="vojo-logo" href="<?php print $base_path; ?>"><img src="<?php print $logo; ?>" alt="Vojo home page" /></a>
                       <?php endif; ?>
                         <?php if (!$is_front && $title_group): ?>
                             <a  id="vojo-logo" href="<?php print $home_link; ?>"><?php print $group_logo; ?></a>

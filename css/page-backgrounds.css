@@ -18,7 +18,8 @@ body {
 }
 
 #vojo-header {
-    background: rgb(74,176,226);
+    background: #f1f1f1;
+    border-bottom: 3px solid #DDD;
     color: #ffffff;
     padding-top: 1em;
     padding-bottom: 1em;

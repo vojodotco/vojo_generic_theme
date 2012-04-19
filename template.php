@@ -109,7 +109,6 @@ function vojo_generic_preprocess_page(&$vars, $hook) {
     $image_path = imagecache_create_url('group_logo_large', $group_node->field_group_logo[0]['filepath']);
     $vars['group_logo'] = '<img src="'. $image_path .'" />';
   }
-  $vars['logo'] = '<img src="'. $vars['base_path'] . $vars['directory'] .'/images/vojo/logo.png" />';
   // If the colorpicker module is present, the vozmob_og feature will provide a
   // field to the group node to select the background color of the header.
   if (isset($group_node->field_group_header_bg_color)) {
@@ -138,7 +137,11 @@ function vojo_generic_preprocess_node(&$vars, $hook) {
     }
     $vars['mediaterms'] = theme('item_list', $term_image_links, NULL, 'ul', array('class' => 'links inline media'));
   }
-
+  // Keep term links sepearate from other node links. No need to display other links twice.
+  $vars['taxonomy'] = taxonomy_link('taxonomy terms', $vars['node']);
+  unset($vars['taxonomy']['comment_add']);
+  unset($vars['taxonomy']['sms_sendtophone']);
+  $vars['terms'] = theme('links', $vars['taxonomy'], array('class' => 'inline links'));
 }
 
 
