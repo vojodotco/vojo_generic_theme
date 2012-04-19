@@ -21,7 +21,18 @@ body {
 
 #page {
 }
-
+#beta {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  color: #fff;
+  font-size: 25px;
+  background: transparent url(../images/vojo/beta.png) no-repeat left top;
+  width: 90px;
+  height: 60px;
+  text-indent: -99999px;
+}
 /*
  * The skip navigation link will be completely hidden until a user tabs to the
  * link. See http://www.webaim.org/techniques/skipnav/

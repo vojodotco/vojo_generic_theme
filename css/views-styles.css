@@ -59,8 +59,8 @@
 /* Reusable styles for the browse stories view */
 .view-vojo-group-browse-stories .views-row {
     float: left;
-    width: 245px;
-    height: 245px;
+    width: 246px;
+    height: 246px;
     margin-right: 10px;
     overflow: hidden;
     display: block;
@@ -70,19 +70,19 @@
 }
 .view-vojo-group-browse-stories .views-row .views-field-field-image-fid {
     background-color: #333;
-    width: 245px;
-    height: 245px;
+    width: 246px;
+    height: 246px;
     position: absolute;
     top: 0;
     left: 0;
 }
 .view-vojo-group-browse-stories .vojo-view-story a {
-    width: 245px;
-    height: 245px;
+    width: 246px;
+    height: 246px;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0;
+    padding: 0 !important;
     text-indent: -9999px;
 }
 .view-vojo-group-browse-stories .vojo-story-text {
@@ -174,4 +174,13 @@
 }
 .views-row .field-field-image .field-item:first-child {
     display: block;
+}
+
+.views_view {
+    position: relative;
+}
+.feed-icon {
+    position: absolute;
+    top: -19px;
+    right: 5px;
 }

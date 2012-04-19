@@ -125,7 +125,7 @@
 <body class="<?php print $classes; ?>">
 
     <div id="vojo-page">
-
+    <a id="beta" href="https://dev.vozmob.net/projects/cronicas/roadmap">beta</a>
         <div id="vojo-header" style="<?php print 'background-color:'. $header_bg_color; ?>">
             <div class="container">
                 <div class="row">
@@ -184,6 +184,7 @@
                     </div>
                     <?php if($sidebar): ?>
                     <div id="vojo-sidebar" class="span4">
+                        <?php print $feed_icons; ?>
                         <?php print $sidebar; ?>
                     </div>
                     <?php endif; ?>

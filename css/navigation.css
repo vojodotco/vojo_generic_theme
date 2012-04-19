@@ -98,3 +98,10 @@ li a.active {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.item-list .pager {
+  margin: 0;
+}
+.item-list .pager li {
+  padding: 0.35em;
+}
