@@ -184,3 +184,20 @@
     top: -19px;
     right: 5px;
 }
+
+/* empty map overlay */
+.view-vojo-group-stories-map .view-empty {
+    color: #fff;
+    width: 770px;
+    height: 400px;
+    padding-top: 1px;
+    background-image: url(../images/vojo/world-map.png);
+    overflow: hidden;
+}
+.view-vojo-group-stories-map .view-empty p {
+   background-color: rgba(1, 1, 1, 0.6);
+   padding: 23.5%;
+   text-align: center;
+   text-shadow: 1px 1px 1px #000;
+   font-size: 16px;
+}
