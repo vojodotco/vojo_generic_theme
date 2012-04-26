@@ -194,10 +194,13 @@
     background-image: url(../images/vojo/world-map.png);
     overflow: hidden;
 }
-.view-vojo-group-stories-map .view-empty p {
+.view-vojo-group-stories-map .view-empty .map-overlay {
    background-color: rgba(1, 1, 1, 0.6);
-   padding: 23.5%;
    text-align: center;
-   text-shadow: 1px 1px 1px #000;
-   font-size: 16px;
+    padding: 17%;
+}
+.view-vojo-group-stories-map .view-empty .map-overlay p {
+  font-size: 16px;
+  text-shadow: 1px 1px 1px #999;
+  margin-bottom: 20px;
 }
