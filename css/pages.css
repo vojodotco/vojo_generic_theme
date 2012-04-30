@@ -102,7 +102,13 @@ div#site-name /* The name of the website */ {
 
 #site-slogan /* The slogan (or tagline) of a website */ {
 }
-
+#vojo-header .vojo-callin {
+  color: #333;
+  float: right;
+  margin-top: 40px;
+  font-size: 16px;
+  margin-right: 50px;
+}
 .region-header /* Wrapper for any blocks placed in the header region */ {
 }
 

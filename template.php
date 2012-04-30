@@ -97,10 +97,12 @@ function vojo_generic_preprocess(&$vars, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function vojo_generic_preprocess_page(&$vars, $hook) {
+  // Get voip call in number, set at admin/voip/call/settings
+  $vars['vojo_callin_number'] = variable_get('voipcall_cid_number','');
+  
   // If we're in a group context, use group logo and header color provided by
   // fields in the group node.
   $group_node = og_get_group_context();
-
   if ($group_node) {
     $vars['title_group'] = $group_node->title;
   }

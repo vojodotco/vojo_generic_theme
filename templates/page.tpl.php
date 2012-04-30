@@ -140,6 +140,9 @@
                         <?php if(!$is_front): ?>
                           <a class="vojo-link" href="<?php print $base_path; ?>"><?php print t('Return to Vojo.co »'); ?></a>
                         <?php endif; ?>
+                        <?php if ($vojo_callin_number): ?>
+                          <div class="vojo-callin"><?php print '<strong>'. t('Call in story: ') .'</strong>'. $vojo_callin_number; ?></div>
+                        <?php endif; ?>
                     </div>                    
                     <div class="span4">
                         <?php print $header ?>
