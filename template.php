@@ -98,7 +98,9 @@ function vojo_generic_preprocess(&$vars, $hook) {
  */
 function vojo_generic_preprocess_page(&$vars, $hook) {
   // Get voip call in number, set at admin/voip/call/settings
-  $vars['vojo_callin_number'] = variable_get('voipcall_cid_number','');
+  if ($vars['is_front']) {
+    $vars['vojo_callin_number'] = variable_get('voipcall_cid_number','');
+  }
   
   // If we're in a group context, use group logo and header color provided by
   // fields in the group node.
@@ -174,3 +176,19 @@ function vojo_generic_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+
+function vojo_generic_node_submitted($node) {
+  return t('Posted by !username on @datetime', 
+    array(
+    '!username' => l($node->name, 'blogs/'. $node->name), 
+    '@datetime' => format_date($node->created),
+  ));
+}
+
+function vojo_generic_comment_submitted($comment) {
+  return t('Comment by !username on @datetime', 
+    array(
+    '!username' => l($comment->name, 'blogs/'. $comment->name), 
+    '@datetime' => format_date($comment->created),
+  ));
+}
