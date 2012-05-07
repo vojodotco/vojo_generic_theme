@@ -96,7 +96,7 @@
 }
 #vojo-node-cycle-prev {
   position: absolute;
-  left: 0;
+  right: 30px;
   bottom: 0;
   padding: 5px 10px;
   background-color: #000;
@@ -105,20 +105,24 @@
 }
 #vojo-node-cycle-next {
   position: absolute;
-  left: 30px;
+  right: 0;
   bottom: 0;
   padding: 5px 10px;
   background-color: #000;
   z-index: 50;
   color: #fff;
 }
+div.pane-blog-photos .vojo-cycle-wrapper div.field-items,
+#vojo-node-cycle-prev,
+#vojo-node-cycle-next {
+  cursor: pointer;
+}
 .pane-blog-photos {
   margin-bottom: 20px;
   width: 100%;
-  background-color: #f1f1f1;
 }
-.pane-blog-photos .pane-content .field-field-image {
-
+.vojo-cycle-wrapper {
+  background-color: #f1f1f1;
 }
 .pane-blog-photos .pane-content .field-field-image .field-items {
   margin: auto;
@@ -126,7 +130,7 @@
 .pane-blog-photos .pane-content #vojo-node-cycle-pager {
   position: absolute;
   right: 0;
-  bottom: 0px;
+  top: 0px;
   z-index: 300;
 }
 .pane-blog-photos .pane-content #vojo-node-cycle-pager a {
