@@ -96,8 +96,8 @@
 }
 #vojo-node-cycle-prev {
   position: absolute;
-  right: 30px;
-  bottom: 0;
+  right: 34px;
+  bottom: 4px;
   padding: 5px 10px;
   background-color: #000;
   z-index: 50;
@@ -105,8 +105,8 @@
 }
 #vojo-node-cycle-next {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 4px;
+  bottom: 4px;
   padding: 5px 10px;
   background-color: #000;
   z-index: 50;
@@ -120,8 +120,12 @@ div.pane-blog-photos .vojo-cycle-wrapper div.field-items,
 .pane-blog-photos {
   margin-bottom: 20px;
   width: 100%;
+  overflow: hidden;
 }
-.vojo-cycle-wrapper {
+.pane-blog-photos .vojo-cycle-wrapper {
+  height: 500px;
+}
+#vojo-cycle-wrapper {
   background-color: #f1f1f1;
 }
 .pane-blog-photos .pane-content .field-field-image .field-items {
@@ -129,12 +133,12 @@ div.pane-blog-photos .vojo-cycle-wrapper div.field-items,
 }
 .pane-blog-photos .pane-content #vojo-node-cycle-pager {
   position: absolute;
-  right: 0;
-  top: 0px;
+  right: 5px;
+  top: 5px;
   z-index: 300;
 }
 .pane-blog-photos .pane-content #vojo-node-cycle-pager a {
-  padding: 5px 10px;
+  padding: 1px 6px;
   background-color: #000;
   color: #fff;
   float: left;

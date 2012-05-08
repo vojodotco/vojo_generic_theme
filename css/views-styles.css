@@ -143,7 +143,8 @@
 .view-vojo-group-browse-stories .vojo-view-story a {
     z-index: 50;
 }
-.view-vojo-group-browse-stories .stories-audio-icon {
+.view-vojo-group-browse-stories .stories-audio-icon,
+.openlayers-popupbox .stories-audio-icon {
     background-image: url(../images/vojo/icon-audio.png);
     float: left;
     width: 26px;
@@ -165,7 +166,11 @@
     z-index: 50;
     position: relative;   
 }
-
+.openlayers-popupbox .vojo-has-audio-wrapper a {
+    float: left;
+    margin-top: 6px;
+    margin-left: 5px;
+}
 /* Float images in views teasers left */
 .views-row .field-field-image .field-item {
     display: none;
