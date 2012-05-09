@@ -147,3 +147,12 @@ div.pane-blog-photos .vojo-cycle-wrapper div.field-items,
 .pane-blog-photos .pane-content #vojo-node-cycle-pager a.activeSlide {
   text-decoration: underline;
 }
+.pane-node-author .pane-title,
+.pane-node-author .pane-content{
+  display: inline;
+  font-size: 14px;
+  font-weight: normal;
+}
+.pane-vojo-node-map-vojo-node-map-ol-map-pane {
+  margin: 20px 0;
+}
