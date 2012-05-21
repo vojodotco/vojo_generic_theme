@@ -99,7 +99,7 @@ function vojo_generic_preprocess(&$vars, $hook) {
 function vojo_generic_preprocess_page(&$vars, $hook) {
   // Get voip call in number, set at admin/voip/call/settings
   if ($vars['is_front']) {
-    $vars['vojo_callin_number'] = variable_get('voipcall_cid_number','');
+    $vars['vojo_callin_number'] = format_phone_number(variable_get('voipcall_cid_number',''));
   }
   
   // If we're in a group context, use group logo and header color provided by
