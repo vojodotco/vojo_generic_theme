@@ -153,8 +153,29 @@ ul.ui-autocomplete li a {
 ul.ui-autocomplete li a.ui-state-hover {
 	background-color: #eeeeee;
 }
-
+html.js input.form-autocomplete {
+	background-position: 100% 7px;
+}
+html.js input.throbbing {
+	background-position: 100% -14px;
+}
 /* Override twiiter bootstrap fixed width of fields */
 .form-item input, .form-item textarea, .form-item select, .form-item .uneditable-input {
   width: auto;
+}
+
+/* Blog entery form */
+.page-node-add-blog #edit-language-wrapper {
+	margin-top: 20px;
+	margin-left: 30px;
+	float: right;
+}
+.page-node-add-blog #edit-title-wrapper {
+	float: left;
+}
+.page-node-add-blog #edit-body-wrapper {
+	clear: both;
+}
+.teaser-checkbox {
+	display: none;
 }
