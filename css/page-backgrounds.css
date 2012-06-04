@@ -59,6 +59,8 @@ body {
   display: inline;
     vertical-align: middle;
 }
+#admin-menu {
+}
 .group-logo-sidebar {
     float: left;
 }
