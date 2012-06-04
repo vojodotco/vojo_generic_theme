@@ -102,16 +102,115 @@ div#site-name /* The name of the website */ {
 
 #site-slogan /* The slogan (or tagline) of a website */ {
 }
-#vojo-header .vojo-callin {
-  color: #333;
-  float: right;
-  margin-top: 40px;
+.vojo-callin {
+  color: #fff;
+  float: left;
+  margin-top: 20px;
   font-size: 16px;
   margin-right: 50px;
+  margin-left: 40px;
 }
 .region-header /* Wrapper for any blocks placed in the header region */ {
+  float: right;
+  clear: none !important;
+  margin-top: 20px;
+}
+#vojo-top-header {
+  background-color: #333;
+  padding: 10px;
+}
+#vojo-user-links,
+#vojo-user-links a {
+  color: #eee;
+}
+#vojo-user-links a:hover {
+  color: #f1941e;
+}
+#vojo-user-menu {
+  margin-top: 20px;
+}
+#vojo-user-links span {
+  text-transform: capitalize;
+  box-shadow: inset 2px 2px 5px #000;
+  border-radius: 12px;
+  padding: 5px 20px 5px 12px;
+  background: url(../images/vojo/downarrow.png) no-repeat right 10px;
+}
+#vojo-user-links ul {
+  padding: 0;
+  margin: 0;
+}
+#vojo-user-links li {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
 }
 
+/* Style dropdown menu */
+#vojo-user-links .menu-parent {
+  position: relative;
+  padding: 5px;
+  width: 115px;
+}
+#vojo-user-links .menu-parent .submenu {
+  position: absolute;
+  left: -9999px;
+  top: 25px;
+  z-index: 400;
+  width: 200px;
+  float: left;
+  display: block;
+  background-color: #333;
+}
+#vojo-user-links .menu-parent:hover .submenu {
+  top: 25px;
+  right: 0;
+  left: auto;
+  margin: 0;
+}
+#vojo-user-links .menu-parent .submenu li {
+  float: none;
+  display: block;
+  margin: 0;
+}
+#vojo-user-links .menu-parent .submenu li a {
+  background-image: none;
+  display: block;
+  text-indent: 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-top: #666 solid 1px;
+  text-align: left;
+  height: auto;
+  width: auto;
+}
+#vojo-user-links .menu-parent .submenu li:first-child a {
+  border-top: none;
+}
+#vojo-user-links .menu-parent .submenu li a:hover,
+#vojo-user-links .menu-parent .submenu li a.active {
+  color: #3EA9F5;
+  text-decoration: none;
+  width: auto;
+}
+
+/* Login link */
+a#vojo-login-link {
+}
+a#vojo-login-link,
+a#vojo-login-link:visited {
+  color: #eee;
+}
+a#vojo-login-link:hover {
+}
+#vojo-login-link {
+  margin-top: 20px;
+}
+#vojo-logo {
+  float: left;
+}
 /*
  * Main (container for everything else)
  */

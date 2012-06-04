@@ -71,8 +71,12 @@ function vojo_generic_theme(&$existing, $type, $theme, $path) {
         'arguments' => array('form' => NULL),
         'template' => 'templates/node-blog-edit'
   );
+  $hooks['dropdown_links'] = array( 
+    'arguments' => array('links' => NULL, 'attributes' => NULL),
+  );
   // @TODO: Needs detailed comments. Patches welcome!
-  return $hooks;}
+  return $hooks;
+}
 
 /**
  * Override or insert variables into all templates.
@@ -98,9 +102,7 @@ function vojo_generic_preprocess(&$vars, $hook) {
  */
 function vojo_generic_preprocess_page(&$vars, $hook) {
   // Get voip call in number, set at admin/voip/call/settings
-  if ($vars['is_front']) {
-    $vars['vojo_callin_number'] = format_phone_number(variable_get('voipcall_cid_number',''));
-  }
+  $vars['vojo_callin_number'] = format_phone_number(variable_get('voipcall_cid_number',''));
   
   // If we're in a group context, use group logo and header color provided by
   // fields in the group node.
@@ -192,3 +194,102 @@ function vojo_generic_comment_submitted($comment) {
     '@datetime' => format_date($comment->created),
   ));
 }
+
+/** 
+ * Provides our own version of theme_links() with markup for a dropdown menu. 
+ */
+function vojo_generic_dropdown_links($links, $attributes = array('class' => 'links')) {
+  global $language;
+  $output = '';
+  if (count($links) > 0) {
+    $output = '<ul'. drupal_attributes($attributes) .'>';
+
+    $num_links = count($links);
+    $i = 1;
+    foreach ($links as $menu_item) {
+      $link = $menu_item['link'];
+      // Do not show disabled menu items and submenu
+      if ($link['hidden'] != 1) {
+        $class = 'menu-' . $menu_item['link']['mlid'];
+        // Add first, last and active classes to the list of links to help out themers.
+        if ($i == 1) {
+          $class .= ' first';
+        }
+        if ($menu_item['below']) {
+          $class .= ' menu-parent';
+        }
+        if ($i == $num_links) {
+          $class .= ' last';
+        }
+
+        $class .= ' menu-item-' . $i;
+
+        if ($link['in_active_trail'] == TRUE) {
+          $class .= ' active-trail';
+        }
+        // Add classes based on path name
+        $path_alias = drupal_get_path_alias($link['href']); 
+        $class_from_path = str_replace(array('/', ' '), '-', $path_alias);
+        $class .= ' menu-' . $class_from_path;
+
+        if (isset($link['href']) && ($link['href'] == $_GET['q'] || ($link['href'] == '<front>' && drupal_is_front_page()))
+            && (empty($link['language']) || $link['language']->language == $language->language)) {
+          $class .= ' active';
+        }
+        $output .= '<li'. drupal_attributes(array('class' => $class)) .'>';
+
+        if (isset($link['href']) && $link['href'] != 'nolink' && $link['href'] != 'vojo_user_name') {
+          // Pass in $link as $options, they share the same keys.
+          $output .= l($link['title'], $link['href'], $link);
+        }
+        else if (!empty($link['title'])) {
+          // Some links are actually not links, but we wrap these in <span> for adding title and class attributes
+          if (empty($link['html'])) {
+            $link['title'] = check_plain($link['title']);
+          }
+          $span_attributes = '';
+          if (isset($link['localized_options']['attributes'])) {
+            $span_attributes = drupal_attributes($link['localized_options']['attributes']);
+          }
+          $output .= '<span'. $span_attributes .'>'. $link['title'] .'</span>';
+        }
+        $i++;
+
+        // Display expanded submenu items, so we can style it as a dropdown menu
+        if (!empty($menu_item['below']) && $menu_item['link']['expanded'] != 0) {
+          // reset counter 
+          $i_sub = 0;
+          $sublinks_count = count($menu_item['below']);
+
+          $output .= '<ul class="submenu' . $submenu_class . '">';
+
+          foreach ($menu_item['below'] as $child_item) {
+            $child_link =  $child_item['link'];
+            $class = 'menu-' . $child_item['link']['mlid'];
+
+            $options = array();
+            if ($child_item['link']['localized_options']['fragment']) { 
+              $options = array(
+                'fragment' => $child_item['link']['localized_options']['fragment'],
+              );
+            } 
+            // Only show menu items not set to hidden in UI
+            if ($child_link['hidden'] != 1) {
+              $output .= '<li'. drupal_attributes(array ('class' => $class)) .'>';
+              $output .= l($child_link['title'], $child_link['href'], $options);
+              $output .= '</li>';
+            }
+            $i_sub++;
+          }
+          $output .= '</ul>';
+          // End submenu
+        }
+      }
+      $output .= '</li>';
+    }
+
+  $output .= '</ul>';
+  }
+  return $output;
+}
+

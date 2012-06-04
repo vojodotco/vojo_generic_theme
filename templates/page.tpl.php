@@ -126,43 +126,45 @@
 
     <div id="vojo-page">
     <a id="beta" href="https://dev.vozmob.net/projects/cronicas/roadmap">beta</a>
+    <div id="vojo-top-header">
+      <div class="container">
+        <div class="row">
+          <div class="span8">
+            <a  id="vojo-logo" href="<?php print $base_path; ?>"><img src="<?php print $logo; ?>" alt="Vojo home page" /></a>
+             <?php if ($vojo_callin_number): ?>
+               <div class="vojo-callin"><?php print '<strong>'. t('Call in story: ') .'</strong>'. $vojo_callin_number; ?></div>
+             <?php endif; ?>
+             <?php print $header ?>
+          </div> <!-- /.span8 -->
+          <div class="span4">
+            <?php print $user_links; ?>
+          </div> <!-- /.span4 -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+      </div> <!-- /#vojo-top-header -->
+      <?php if (!$is_front && $title_group): ?>
         <div id="vojo-header" style="<?php print 'background-color:'. $header_bg_color; ?>">
             <div class="container">
                 <div class="row">
                     <div class="span8">
-                      <?php if(!$title_group): ?>
-                        <a  id="vojo-logo" href="<?php print $base_path; ?>"><img src="<?php print $logo; ?>" alt="Vojo home page" /></a>
-                      <?php endif; ?>
-                        <?php if (!$is_front && $title_group): ?>
-                            <a  id="vojo-logo" href="<?php print $home_link; ?>"><?php print $group_logo; ?></a>
-                            <h1 class="title"><a href="<?php print $home_link; ?>" title="Return to <?php print $title_group; ?>"/> <?php print $title_group; ?></a></h1>
-                        <?php endif; ?>
-                        <?php if(!$is_front): ?>
-                          <a class="vojo-link" href="<?php print $base_path; ?>"><?php print t('Return to Vojo.co »'); ?></a>
-                        <?php endif; ?>
-                        <?php if ($vojo_callin_number): ?>
-                          <div class="vojo-callin"><?php print '<strong>'. t('Call in story: ') .'</strong>'. $vojo_callin_number; ?></div>
-                        <?php endif; ?>
-                    </div>                    
-                    <div class="span4">
-                        <?php print $header ?>
+                        <a  id="vojo-logo" href="<?php print $home_link; ?>"><?php print $group_logo; ?></a>
+                        <h1 class="title"><a href="<?php print $home_link; ?>" title="Return to <?php print $title_group; ?>"/> <?php print $title_group; ?></a></h1>
                     </div>
                 </div>
             </div>
         </div>
-
+        <?php endif; ?>
         <?php if($navigation) { ?>
         <div id="vojo-navigation">
             <div class="container">
                 <div class="row">
-                    <div class="span12">
+                    <div class="span8">
                         <?php print $navigation ?>
                     </div>
                 </div>
             </div>
         </div>
         <?php } ?>
-
         <div id="vojo-main-wrapper">
             <div class="container">
 
