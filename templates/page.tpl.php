@@ -130,7 +130,7 @@
       <div class="container">
         <div class="row">
           <div class="span8">
-            <a  id="vojo-logo" href="<?php print $base_path; ?>"><img src="<?php print $logo; ?>" alt="Vojo home page" /></a>
+            <a  id="vojo-logo" href="<?php print $base_path; ?>"><img src="/<?php print drupal_get_path('theme','vojo_generic'); ?>/images/vojo/logo-top-header.png" alt="Vojo home page"/></a>
              <?php if ($vojo_callin_number): ?>
                <div class="vojo-callin"><?php print '<strong>'. t('Call in story: ') .'</strong>'. $vojo_callin_number; ?></div>
              <?php endif; ?>

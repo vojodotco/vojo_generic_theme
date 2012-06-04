@@ -105,10 +105,9 @@ div#site-name /* The name of the website */ {
 .vojo-callin {
   color: #fff;
   float: left;
-  margin-top: 20px;
   font-size: 16px;
-  margin-right: 50px;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-top: 3px;
 }
 .region-header /* Wrapper for any blocks placed in the header region */ {
   float: right;
@@ -117,7 +116,7 @@ div#site-name /* The name of the website */ {
 }
 #vojo-top-header {
   background-color: #333;
-  padding: 10px;
+  padding: 5px;
 }
 #vojo-user-links,
 #vojo-user-links a {
@@ -127,7 +126,10 @@ div#site-name /* The name of the website */ {
   color: #f1941e;
 }
 #vojo-user-menu {
-  margin-top: 20px;
+    float: right;
+}
+#vojo-user-links {
+    margin: 0px;
 }
 #vojo-user-links span {
   text-transform: capitalize;
@@ -157,7 +159,7 @@ div#site-name /* The name of the website */ {
   left: -9999px;
   top: 25px;
   z-index: 400;
-  width: 200px;
+  width: 180px;
   float: left;
   display: block;
   background-color: #333;
@@ -208,7 +210,10 @@ a#vojo-login-link:hover {
 #vojo-login-link {
   margin-top: 20px;
 }
-#vojo-logo {
+#vojo-logo /* Wrapping link for logo */ {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
   float: left;
 }
 /*

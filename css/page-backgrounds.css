@@ -49,11 +49,6 @@ body {
 #vojo-header a.vojo-link:hover {
     text-decoration: underline;
 }
-#vojo-logo /* Wrapping link for logo */ {
-  margin: 0;
-  padding: 0;
-    vertical-align: middle;
-}
 #vojo-header h1.title {
   display: inline;
   vertical-align: middle;
