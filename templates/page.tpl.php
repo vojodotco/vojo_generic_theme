@@ -125,7 +125,7 @@
 <body class="<?php print $classes; ?>">
 
     <div id="vojo-page">
-      <?php print $top_header; ?>
+      <?php print $vojo_site_header; ?>
       <?php if (!$is_front && $title_group): ?>
         <div id="vojo-header" style="<?php print 'background-color:'. $header_bg_color; ?>">
             <div class="container">
