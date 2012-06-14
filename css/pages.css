@@ -47,7 +47,6 @@ body {
   height: auto;
   padding: 2px 0 3px 0;
 }
-
 /*
  * Header
  */
@@ -208,6 +207,7 @@ ul.links li {
 
 .more-link /* Aggregator, blog, and forum more link */ {
   text-align: right; /* LTR */
+  padding-right: 5px;
 }
 
 .region-content-bottom /* Wrapper for any blocks placed in the "content bottom" region */ {
@@ -311,4 +311,194 @@ ul.links li {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* -----------------------------------------------------------------------------
+   Rront page
+   ----------------------------------------------------------------------------- */
+/** Tagline **/
+#vojo-tagline {
+  font-size: 32px;
+  float: left;
+  width: 75%;
+  padding-top: 10px;
+  line-height: 22px;
+}
+/** Try now Button **/
+.huge-button, a.huge-button:link, a.huge-button:visited {
+  background-color: #ccc;
+  padding: 10px;
+  display: block;
+  color: #fff;
+  text-shadow: 1px 1px 3px #333;
+  font-size: 26px;
+  border-radius: 5px;
+  text-align: center;
+}
+#vojo-trynow {
+  width: 25%;
+  float: left;
+}
+#vojo-trynow .huge-button {
+}
+
+/* -----------------------------------------------------------------------------
+Slideshow
+*/
+#front-slideshow  {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#front-slideshow ul  {
+  margin: 0;
+  padding: 0;  
+}
+#front-slideshow ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  display: none;
+}
+#front-slideshow ul li.views-row-first {
+}
+#front-slideshow ul li.current-slide {
+  z-index: 400;
+  display: block;
+}
+#front-slideshow ul li .views-field-title {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#front-slideshow ul li .views-field-title h2 {
+  font-size: 35px;
+}
+#front-slideshow ul li .views-field-title h2,
+#front-slideshow ul li .views-field-title a {
+  color: #fff;
+  text-shadow: 10px 8px 8px #333;
+}
+#front-slideshow ul li .views-field-field-slideshow-caption-value {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 10px 8px 8px #333;
+  width: 100%;
+  text-align: center;
+}
+#front-slideshow ul li .views-field-field-slideshow-caption-value a {
+  color: #fff;
+}
+#front-slideshow #vojo-slide-prev,
+#front-slideshow #vojo-slide-next {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-indent: -9999px;
+  opacity: 0.4;
+  bottom: 35%;
+  z-index: 500;
+}
+#front-slideshow #vojo-slide-prev {
+  left: 0;
+  background: url(../images/vojo/slideshow-arrows.png) no-repeat left top;
+}
+#front-slideshow #vojo-slide-next {
+  right: 0;
+  background: url(../images/vojo/slideshow-arrows.png) no-repeat left -70px;
+}
+#front-slideshow #vojo-slide-prev:hover,
+#front-slideshow #vojo-slide-next:hover {
+  opacity: 1;
+}
+#front-logo {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+.front .panel-pane {
+  text-align: center;
+}
+.front .pane-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #999;
+  font-size: 22px;
+  line-height: 10px;
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+  background-color: #fff;
+  padding: 15px;
+  display: inline-block;
+}
+
+.front .pane-content {
+  border-top: #ccc solid 1px;
+  text-align: left;
+}
+.pane-front-trynow .pane-content {
+  border-top: none;
+}
+/** Featured groups **/
+.pane-vojo-og-panel-pane-1 li {
+  float: left;
+  width: 33%;
+}
+.front .view-id-vojo_og .group-logo-listing {
+  float: none;
+  width: auto;
+}
+.front .group-logo-listing {
+  text-align: left;
+  display: block;
+}
+.group-list {
+  overflow: hidden;
+}
+/** Site features list **/
+#vojo-site-features {
+  padding: 0;
+  margin-top: 30px;
+}
+#vojo-site-features li {
+  width: 28%;
+  margin-right: 5%;
+  float: left;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 20px;
+  height: 90px;
+}
+#vojo-site-features li h3 {
+  line-height: 20px;
+}
+#vojo-site-features li img {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.pane-key-features {
+  clear: both;
+}
+/** Front recent stories **/
+.front .pane-vojo-group-browse-stories-panel-pane-2 {
+
+}
+.front .pane-vojo-group-browse-stories-panel-pane-2 ul {
+  padding: 30px 0 30px 6%;
+  height: 480px;
+  overflow: hidden;
+}
+.front .pane-vojo-group-browse-stories-panel-pane-2 ul li {
 }

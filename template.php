@@ -67,10 +67,10 @@
 function vojo_generic_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
   // Add your theme hooks like this:
-  $hooks['blog_node_form'] = array( 
+  /* $hooks['blog_node_form'] = array( 
         'arguments' => array('form' => NULL),
         'template' => 'templates/node-blog-edit'
-  );
+  ); */
   // @TODO: Needs detailed comments. Patches welcome!
   return $hooks;
 }

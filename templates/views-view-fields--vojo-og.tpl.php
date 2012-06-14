@@ -24,11 +24,10 @@
  * @ingroup views_templates
  */
 $group_nid = $fields['nid']->raw;
-
 // If group has an uploaded logo, display that instead of mini theme screenshot. 
-if (isset($fields['field_group_logo_fid'])) {
+if (!empty($fields['field_group_logo_fid']->raw)) {
   $file = field_file_load($fields['field_group_logo_fid']->raw);
-  $image_path = imagecache_create_url('group_logo_med', $file['filepath']);
+  $image_path = imagecache_create_url('group_logo_large', $file['filepath']);
   $group_logo = $image_path;
 }
 ?>
@@ -41,6 +40,6 @@ if (isset($fields['field_group_logo_fid'])) {
     </span>
     <h3><?php print $fields['title']->content ?></h3>
     <small><?php print $fields['description']->content ?></small>
-    <div class="vojo-group-posts"><?php print $fields['post_count']->content ?></div>
-    <div class="vojo-group-members"><?php print $fields['member_count']->content ?></div>
+    <div class="vojo-group-posts"><?php print $fields['post_count']->content ?> <?php print t('stories'); ?></div>
+    <div class="vojo-group-members"><?php print $fields['member_count']->content ?> <?php print t('members'); ?> </div>
 </div>
