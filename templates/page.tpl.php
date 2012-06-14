@@ -132,7 +132,9 @@
                 <div class="row">
                     <div class="span8">
                         <a  id="vojo-logo" href="<?php print $home_link; ?>"><?php print $group_logo; ?></a>
-                        <h1 class="title"><a href="<?php print $home_link; ?>" title="Return to <?php print $title_group; ?>"/> <?php print $title_group; ?></a></h1>
+                        <?php if (!$group_logo) : ?>
+                          <h1 class="title"><a href="<?php print $home_link; ?>" title="Return to <?php print $title_group; ?>"/> <?php print $title_group; ?></a></h1>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
