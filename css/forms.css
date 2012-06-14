@@ -165,15 +165,18 @@ html.js input.throbbing {
 }
 
 /* Blog entery form */
-.page-node-add-blog #edit-language-wrapper {
+.section-node-add #edit-language-wrapper,
+.section-node-edit #edit-language-wrapper{
 	margin-top: 20px;
 	margin-left: 30px;
 	float: right;
 }
-.page-node-add-blog #edit-title-wrapper {
+.section-node-add #edit-title-wrapper,
+.section-node-edit #edit-title-wrapper{
 	float: left;
 }
-.page-node-add-blog #edit-body-wrapper {
+.section-node-add #edit-body-wrapper,
+.section-node-edit #edit-body-wrapper{
 	clear: both;
 }
 .teaser-checkbox {
