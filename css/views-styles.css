@@ -209,3 +209,20 @@
   text-shadow: 1px 1px 1px #999;
   margin-bottom: 20px;
 }
+.create-group-link {
+    float: right;
+    display: block;
+    background-color: #2980D7;
+    padding: 5px 10px;
+    border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+}
+.create-group-link,
+.create-group-link:visited,
+.create-group-link:link {
+    color: #fff; 
+}
+.view-vojo-og .view-content {
+    clear: both;
+}
