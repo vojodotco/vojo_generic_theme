@@ -182,3 +182,6 @@ html.js input.throbbing {
 .teaser-checkbox {
 	display: none;
 }
+#edit-og-description-wrapper {
+	clear: both;
+}
