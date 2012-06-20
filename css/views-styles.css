@@ -54,13 +54,13 @@
 }
 
 /** Front page recent stories style **/
-.view-vojo-story-listings .view-content ul {
+.view-vojo-global-story-listings .view-content ul {
     padding-left: 20px;
 }
-.section-blogs .view-vojo-story-listings .view-content ul {
+.section-blogs .view-vojo-global-story-listings .view-content ul {
     padding-left: 0;
 }
-.view-vojo-story-listings .view-content ul li {
+.view-vojo-global-story-listings .view-content ul li {
     float: left;
     width: 340px;
     padding: 0;
@@ -68,41 +68,41 @@
     margin-bottom: 20px;
     position: relative;
 }
-.view-vojo-story-listings .view-content ul li .story-date-wrapper {
+.view-vojo-global-story-listings .view-content ul li .story-date-wrapper {
     margin-top: 0;
     margin-right: 0;
     padding: 0;
 }
-.view-vojo-story-listings .vojo-story-mapped .field-content {
+.view-vojo-global-story-listings .vojo-story-mapped .field-content {
     float: left;
     margin-top: 2px;
 }
-.view-vojo-story-listings .views-field-field-image-fid {
+.view-vojo-global-story-listings .views-field-field-image-fid {
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
 }
-.view-vojo-story-listings .views-field-field-image-fid img {
+.view-vojo-global-story-listings .views-field-field-image-fid img {
     display: block;
     border: #999 solid 1px;
 }
-.view-vojo-story-listings .views-field-title h3 {
+.view-vojo-global-story-listings .views-field-title h3 {
     line-height: 18px;
     font-size: 16px;
 }
-.view-vojo-story-listings .views-field-title-1 {
+.view-vojo-global-story-listings .views-field-title-1 {
 }
-.view-vojo-story-listings .views-field-title-1 a {
+.view-vojo-global-story-listings .views-field-title-1 a {
   font-size: 12px;
  /* background: #000;
   color: #2DAEE5; */
 }
-.view-vojo-story-listings .views-field-title-1 .views-label {
+.view-vojo-global-story-listings .views-field-title-1 .views-label {
     font-size: 9px;
     text-transform: uppercase;
     color: #666;
 }
-.view-vojo-story-listings .views-field-title-1 a:hover {
+.view-vojo-global-story-listings .views-field-title-1 a:hover {
     text-decoration: none;
 }
 
