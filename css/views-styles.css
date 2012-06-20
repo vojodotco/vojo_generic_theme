@@ -56,6 +56,7 @@
 /** Front page recent stories style **/
 .view-vojo-global-story-listings .view-content ul {
     padding-left: 20px;
+    overflow: hidden;
 }
 .section-blogs .view-vojo-global-story-listings .view-content ul {
     padding-left: 0;
