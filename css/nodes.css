@@ -118,6 +118,7 @@ div.pane-blog-photos .vojo-cycle-wrapper div.field-items,
   cursor: pointer;
 }
 .pane-blog-photos {
+  margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
   overflow: hidden;
@@ -155,4 +156,13 @@ div.pane-blog-photos .vojo-cycle-wrapper div.field-items,
 }
 .pane-vojo-node-map-vojo-node-map-ol-map-pane {
   margin: 20px 0;
+}
+.pane-blog-prev-next-links {
+  margin: 20px 0;
+}
+.blog-prev-next a {
+  background-color: #2980D7;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
 }

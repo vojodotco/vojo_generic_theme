@@ -15,6 +15,9 @@ body {
   margin: 0;
   padding: 0;
 }
+a:hover {
+  color: #2DAEE5;
+}
 
 #page-wrapper {
 }
@@ -322,7 +325,7 @@ ul.links li {
   float: left;
   width: 75%;
   padding-top: 10px;
-  line-height: 22px;
+  line-height: 30px;
 }
 /** Try now Button **/
 .huge-button, a.huge-button:link, a.huge-button:visited {
@@ -442,11 +445,18 @@ Slideshow
 }
 
 .front .pane-content {
-  border-top: #ccc solid 1px;
   text-align: left;
+  padding-top: 30px;
+}
+.front .pane-front-trynow {
+  margin-top: 30px;
 }
 .pane-front-trynow .pane-content {
   border-top: none;
+  padding-top: 0;
+}
+.pane-key-features {
+  clear: both;
 }
 /** Featured groups **/
 .pane-vojo-og-panel-pane-1 li {
@@ -456,8 +466,6 @@ Slideshow
 .front .view-id-vojo_og .group-logo-listing {
   float: none;
   width: auto;
-}
-.front .group-logo-listing {
   text-align: left;
   display: block;
 }
@@ -467,7 +475,7 @@ Slideshow
 /** Site features list **/
 #vojo-site-features {
   padding: 0;
-  margin-top: 0;
+  margin-top: 20px;
 }
 #vojo-site-features li {
   width: 28%;
@@ -476,8 +484,9 @@ Slideshow
   list-style-type: none;
   margin-left: 0;
   padding: 0;
-  overflow: hidden;
-  height: 110px;
+  height: 120px;
+  min-width: 200px;
+  margin-bottom: 20px;
 }
 #vojo-site-features li h3 {
   line-height: 20px;
@@ -485,11 +494,9 @@ Slideshow
 #vojo-site-features li img {
   float: left;
   margin-right: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
-.pane-key-features {
-  clear: both;
-}
+
 /** Front recent stories **/
 .front .pane-vojo-group-browse-stories-panel-pane-2 {
 
