@@ -145,14 +145,17 @@
 }
 
 /** language switcher **/
-.block-locale {
+.block-locale,
+.pane-locale-0 {
     margin: 0em;
     padding: 0em;
 }
-.block-locale h2 {
+.block-locale h2,
+.pane-locale-0 h2 {
     display: none;
 }
-.block-locale ul {
+.block-locale ul,
+.pane-locale-0 ul {
     display: inline-block;
     padding: 0.1em 0.5em 0.25em 0.5em;
     margin: 0em;
@@ -162,20 +165,24 @@
     -moz-border-radius: 0.25em;    
     list-style-type: none;
 }
-.block-locale ul li {
+.block-locale ul li,
+.pane-locale-0 ul li {
     display: inline-block;
 }
-.block-locale ul li.first {
+.block-locale ul li.first,
+.pane-locale-0 ul li.first {
     border-right: 1px solid rgb(1,88,175);
     padding-right: 0.5em;
 }
-.block-locale ul li a {
+.block-locale ul li a,
+.pane-locale-0 ul li a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.7em;
 }
-.block-locale ul li.active a {
+.block-locale ul li.active a,
+.pane-locale-0 ul li.active a {
     font-weight: bold;
 }
 
@@ -197,4 +204,9 @@
 
 #vojo-sidebar .block-tagadelic a {
     text-decoration: none;
+}
+.panel-sidebar .pane-locale-0 {
+    border: none;
+    padding-left: 0;
+    margin: 20px 0;
 }
