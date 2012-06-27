@@ -7,28 +7,39 @@
 
 // remove some other buttons
 $group = og_get_group_context();
-unset($form['buttons']['preview']);
-?>
-<div class="row vojo-submit-form">
-    
-    <?php print drupal_render($form['title']); ?>
 
-    <?php print drupal_render($form['taxonomy']); ?>
-    
-    <?php print drupal_render($form['body_field']); ?>
+if( vojo_og_can_submit($group->nid) ) {
 
-    <?php print drupal_render($form['language']); ?>
+    unset($form['buttons']['preview']);
+    ?>
+    <div class="row vojo-submit-form">
+        
+        <?php print drupal_render($form['title']); ?>
     
-    <?php print drupal_render($form['field_map']); ?>
-
-    <?php print drupal_render($form['attachments']); ?>
+        <?php print drupal_render($form['taxonomy']); ?>
+        
+        <?php print drupal_render($form['body_field']); ?>
     
-    <input type="hidden" name="og_groups[<?=$group->nid?>]" id="edit-og-groups-<?=$group->nid?>" value="<?=$group->nid?>">
-
-    <div class="twelvecol last vojo-buttons">
-        <?php print drupal_render($form); ?>
+        <?php print drupal_render($form['language']); ?>
+        
+        <?php print drupal_render($form['field_map']); ?>
+    
+        <?php print drupal_render($form['attachments']); ?>
+        
+        <input type="hidden" name="og_groups[<?=$group->nid?>]" id="edit-og-groups-<?=$group->nid?>" value="<?=$group->nid?>">
+    
+        <div class="twelvecol last vojo-buttons">
+            <?php print drupal_render($form); ?>
+        </div>
+    
     </div>
+    
+    <?php
 
-</div>
+} else {
+    ?>
 
-<?php
+    <h1>Error</h1>
+
+    <?
+}
