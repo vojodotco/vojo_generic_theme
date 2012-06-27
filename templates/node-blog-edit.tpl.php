@@ -16,15 +16,16 @@ if( vojo_og_can_submit($group->nid) ) {
         
         <?php print drupal_render($form['title']); ?>
     
-        <?php print drupal_render($form['taxonomy']); ?>
-        
-        <?php print drupal_render($form['body_field']); ?>
-    
         <?php print drupal_render($form['language']); ?>
         
+        <?php print drupal_render($form['body_field']); ?>
+            
+        <?php print drupal_render($form['attachments']); ?>
+
         <?php print drupal_render($form['field_map']); ?>
     
-        <?php print drupal_render($form['attachments']); ?>
+        <?php print drupal_render($form['taxonomy']); ?>
+
         
         <input type="hidden" name="og_groups[<?=$group->nid?>]" id="edit-og-groups-<?=$group->nid?>" value="<?=$group->nid?>">
     
