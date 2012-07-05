@@ -282,3 +282,31 @@
 .view-vojo-og .view-content {
     clear: both;
 }
+
+/* Featured stories carousel */
+.jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 540px;
+}
+.view-vojo-group-featured-stories .jcarousel-skin-default .jcarousel-container-horizontal {
+    height: 400px;
+    width: 550px;
+}
+.view-vojo-group-featured-stories .jcarousel-skin-default .jcarousel-item-horizontal {
+    width: 530px;
+    height: auto;
+    padding-bottom: 10px;
+    min-height: 200px;
+    border: none;
+    text-align: left;
+}
+.view-vojo-group-featured-stories .vojo-story-mapped span {
+    margin-left: 10px;
+}
+.view-vojo-group-featured-stories .jcarousel-skin-default .jcarousel-prev-horizontal,
+.view-vojo-group-featured-stories .jcarousel-skin-default .jcarousel-next-horizontal {
+    margin-top: 100px;
+}
+.view-vojo-group-featured-stories .views-field-field-image-fid img {
+    float: left;
+    margin-right: 10px;
+}
