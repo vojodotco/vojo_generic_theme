@@ -5,8 +5,17 @@
  *   http://drupal.org/node/601646
  **/
 
-// remove some other buttons
-$group = og_get_group_context();
+if (array_key_exists('translation',$_GET) ){
+  // handle the case of translating a node
+  $original_nid = $_GET['translation'];
+  if( is_numeric($original_nid) ){
+    $original_node = node_load($original_nid);
+    $group = og_determine_context_get_group($original_node);
+  }
+} else {
+  // get the group like normal
+  $group = og_get_group_context();
+}
 
 if( vojo_og_can_submit($group->nid) ) {
 
@@ -26,8 +35,9 @@ if( vojo_og_can_submit($group->nid) ) {
     
         <?php print drupal_render($form['taxonomy']); ?>
 
-        
-        <input type="hidden" name="og_groups[<?=$group->nid?>]" id="edit-og-groups-<?=$group->nid?>" value="<?=$group->nid?>">
+        <?php if ($group) { ?>
+          <input type="hidden" name="og_groups[<?=$group->nid?>]" id="edit-og-groups-<?=$group->nid?>" value="<?=$group->nid?>">
+        <?php } ?>
     
         <div class="twelvecol last vojo-buttons">
             <?php print drupal_render($form); ?>
