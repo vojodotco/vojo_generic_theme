@@ -139,12 +139,71 @@ div#site-name /* The name of the website */ {
   height: 40px;
   text-indent: -9999px;
   overflow: hidden;
-  background: url(../images/social-icons-sprite.png) -43px top;
+  background: url(../images/social-icons-sprite.png) -172px top;
 }
 #block-menu-menu-vojo-social-links ul.menu li#twitter a:hover {
-  background-position: -43px -40px;
+  background-position: -172px -40px;
 }
-
+#block-menu-menu-vojo-social-links ul.menu li#facebook a {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../images/social-icons-sprite.png) -130px top;
+}
+#block-menu-menu-vojo-social-links ul.menu li#facebook a:hover {
+  background-position: -130px -40px;
+}
+#block-menu-menu-vojo-social-links ul.menu li#google-plus a {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../images/social-icons-sprite.png) -216px top;
+}
+#block-menu-menu-vojo-social-links ul.menu li#google-plus a:hover {
+  background-position: -216px -40px;
+}
+#block-menu-menu-vojo-social-links ul.menu li#rss a {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../images/social-icons-sprite.png) -172px top;
+}
+#block-menu-menu-vojo-social-links ul.menu li#rss a:hover {
+  background-position: -172px -40px;
+}
+#block-menu-menu-vojo-social-links ul.menu li#vimeo a {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../images/social-icons-sprite.png) -392px top;
+}
+#block-menu-menu-vojo-social-links ul.menu li#vimeo a:hover {
+  background-position: -392px -40px;
+}
+#block-menu-menu-vojo-social-links ul.menu li#tumblr a {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../images/social-icons-sprite.png) -85px top;
+}
+#block-menu-menu-vojo-social-links ul.menu li#tumblr a:hover {
+  background-position: -85px -40px;
+}
 
 h1.title, /* The title of the page */
 h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
