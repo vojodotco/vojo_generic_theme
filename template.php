@@ -191,3 +191,9 @@ function vojo_generic_comment_submitted($comment) {
     '@datetime' => format_date($comment->created),
   ));
 }
+
+function vojo_generic_menu_item($link, $has_children, $menu = '', $in_active_trail = FALSE, $extra_class = NULL) {
+  $search = array(' ','.');
+  $css_id = strtolower(str_replace($search, '-', strip_tags($link)));
+  return '<li id="' . $css_id . '" class="' . ($menu ? 'expanded' : ($has_children ? 'collapsed' : 'leaf')) .'">'. $link . $children ."</li>\n";
+}
