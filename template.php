@@ -195,5 +195,13 @@ function vojo_generic_comment_submitted($comment) {
 function vojo_generic_menu_item($link, $has_children, $menu = '', $in_active_trail = FALSE, $extra_class = NULL) {
   $search = array(' ','.');
   $css_id = strtolower(str_replace($search, '-', strip_tags($link)));
+
+  // Add a CSS ID if the link contains a social website name.
+  $social_sites = array('twitter', 'facebook', 'tumblr', 'google plus', 'google', 'rss', 'vimeo');
+  foreach ($social_sites as $site) {    
+    if (stristr(strtolower(strip_tags($link)), $site)) {
+      $css_id = 'social-link-'. str_replace($search, '-', $site);
+    }
+  }
   return '<li id="' . $css_id . '" class="' . ($menu ? 'expanded' : ($has_children ? 'collapsed' : 'leaf')) .'">'. $link . $children ."</li>\n";
 }
