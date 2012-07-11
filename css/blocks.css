@@ -217,6 +217,7 @@
 .pane-vojo-og-vojo-group-details .item-list ul,
  ul#vojo-create-content-links {
   padding-left: 0;
+  margin-left: 0;
 }
 #block-vojo_og-vojo-group-details .item-list ul li,
 .pane-vojo-og-vojo-group-details .item-list ul li,
@@ -231,4 +232,8 @@ ul#vojo-create-content-links li {
 .pane-vojo-og-vojo-group-details .item-list ul li.last,
 ul#vojo-create-content-links li.last {
   border-bottom: none;
+}
+
+.pane-og-my table {
+  width: 100%;
 }
