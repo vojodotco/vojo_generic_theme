@@ -310,3 +310,8 @@
     float: left;
     margin-right: 10px;
 }
+
+/* My stories table */
+.view-vojo-global-story-listings table {
+    width: 100%;
+}

@@ -211,23 +211,24 @@
     margin: 20px 0;
 }
 
-/** User action links **/
-.pane-user-action-links ul {
-  margin: 0;
+/** Custom vojo create content links **/
+
+#block-vojo_og-vojo-group-details .item-list ul,
+.pane-vojo-og-vojo-group-details .item-list ul,
+ ul#vojo-create-content-links {
+  padding-left: 0;
 }
-.pane-user-action-links ul li {
+#block-vojo_og-vojo-group-details .item-list ul li,
+.pane-vojo-og-vojo-group-details .item-list ul li,
+ul#vojo-create-content-links li {
+  border-bottom: #ddd solid 1px;
+  padding: 5px;
   list-style-type: none;
-  margin-bottom: 10px;
+  list-style-image: none;
+  margin-left: 0;
 }
-.pane-user-action-links ul li a {
-    padding: 0.3em 0.5em;
-    margin: 0em;
-    margin-bottom: 0.5em;
-    background-color: rgb(41,128,215);
-    border-radius: 0.3em;    
-    -webkit-border-radius: 0.3em;
-    -moz-border-radius: 0.3em;    
-    list-style-type: none;
-    color: #fff;
-    font-size: 14px;
+#block-vojo_og-vojo-group-details .item-list ul li.last,
+.pane-vojo-og-vojo-group-details .item-list ul li.last,
+ul#vojo-create-content-links li.last {
+  border-bottom: none;
 }

@@ -13,7 +13,7 @@
  */
 
 
-body {
+html body {
     background: #F1F1F1;
 }
 
@@ -72,6 +72,7 @@ body {
 
 #vojo-content {
     margin-bottom: 1em;
+    min-height: 500px;
 }
 
 #vojo-sidebar {
