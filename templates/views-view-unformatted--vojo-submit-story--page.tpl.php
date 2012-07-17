@@ -8,6 +8,7 @@
 ?>
 
 <?php
+// A hack to get blog node form to display for anonymouse users (due to a blog module permissions bug).
 module_load_include('inc', 'node', 'node.pages');  
 $node_type = 'blog';
 $form_id = $node_type . '_node_form';
