@@ -185,3 +185,7 @@ html.js input.throbbing {
 #edit-og-description-wrapper {
 	clear: both;
 }
+
+html.js fieldset.collapsed {
+	height: auto;
+}
