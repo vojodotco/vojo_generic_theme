@@ -169,6 +169,17 @@
     margin: 20px 0;
 }
 
+
+/** Vojo group email/call-in details **/
+#block-vojo_og-vojo-group-details p {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 9px 0px 0px 0px;
+}
+#block-vojo_og-vojo-group-details p em {
+  font-weight: bold;
+}
+
 /** Custom vojo create content links **/
 
 #block-vojo_og-vojo-group-details .item-list ul,
