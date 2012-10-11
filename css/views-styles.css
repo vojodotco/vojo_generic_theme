@@ -218,6 +218,17 @@
     z-index: 50;
     position: relative;   
 }
+.vojo-story-has-audio {
+    background-image: url(../images/vojo/circled-audio-icon-big.png);
+    float: left;
+    width: 150px;
+    height: 150px;
+    text-indent: -9999px;
+    position: relative;
+    z-index: 50;
+    margin-left: 48px;
+    margin-top: 18px;
+}
 .view-vojo-group-browse-stories .vojo-story-mapped span {
     margin-left: 3px;
     margin-top: 3px;
