@@ -140,11 +140,14 @@
             </div>
         </div>
         <?php endif; ?>
-        <?php if($navigation) { ?>
+        <?php if($navigation || $group_menu) { ?>
         <div id="vojo-navigation">
             <div class="container">
                 <div class="row">
                     <div class="span8">
+                        <div id="block-vojo_og-generic-group-menu" class="block block-vojo_og">
+                            <?php if (!empty($group_menu)) print $group_menu; ?>
+                        </div>
                         <?php print $navigation ?>
                     </div>
                 </div>
