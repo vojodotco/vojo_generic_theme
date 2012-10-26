@@ -112,7 +112,7 @@ function vojo_generic_preprocess_page(&$vars, $hook) {
     $vars['group_logo'] = '<img src="'. $image_path .'" />';
   }
   if (!empty($group_node)) {
-    $vars['home_link'] = $vars['base_path'] . drupal_get_path_alias('node/'. $group_node->nid);
+    $vars['home_link'] = url('node/'. $group_node->nid);
   }
   // If the colorpicker module is present, the vozmob_og feature will provide a
   // field to the group node to select the background color of the header.
