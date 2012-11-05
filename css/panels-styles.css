@@ -33,3 +33,9 @@
 .panel-sidebar .pane-service-links-service-links ul li a img {
   vertical-align: middle;
 }
+
+/* Key Features */
+.pane-key-features a:hover {
+  color: #333;
+  text-decoration: none;
+}
