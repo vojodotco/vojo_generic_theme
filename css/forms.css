@@ -194,3 +194,8 @@ html.js fieldset.collapsed {
 .voipnumber-field-prefix.voipnumber-field-column {
   display: none;
 }
+
+/** HACK (rahulb): hide membership moderation option (cause it doesnt work) **/
+#edit-og-selective-1-wrapper {
+  display: none;
+}
