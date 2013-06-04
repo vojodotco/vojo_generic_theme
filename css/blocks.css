@@ -189,8 +189,7 @@
   margin-left: 0;
 }
 #block-vojo_og-vojo-group-details .item-list ul li,
-.pane-vojo-og-vojo-group-details .item-list ul li,
-ul#vojo-create-content-links li {
+.pane-vojo-og-vojo-group-details .item-list ul li {
   border-bottom: #ddd solid 1px;
   padding: 5px;
   list-style-type: none;
@@ -198,11 +197,41 @@ ul#vojo-create-content-links li {
   margin-left: 0;
 }
 #block-vojo_og-vojo-group-details .item-list ul li.last,
-.pane-vojo-og-vojo-group-details .item-list ul li.last,
-ul#vojo-create-content-links li.last {
+.pane-vojo-og-vojo-group-details .item-list ul li.last {
   border-bottom: none;
 }
 
 .pane-og-my table {
   width: 100%;
+}
+
+.pane-user-action-links {
+  margin: 0 0 30px;
+  overflow: hidden;
+}
+ul#vojo-create-content-links li {
+  display: inline;
+  float: left;
+  background-color: #2980D7;
+  padding: 6px 30px;
+  margin-right: 10px;
+}
+ul#vojo-create-content-links li a {
+  color: #fff;
+  font-size: 16px;
+}
+div.ctools-modal-content .modal-header {
+  background-color: #2980D7;
+  padding: 15px;
+}
+div.ctools-modal-content .modal-header .close {
+  text-indent: -9999px;
+  opacity: 1;
+}
+div.ctools-modal-content .modal-header .close img {
+  float: right;
+}
+div.ctools-modal-content {
+  box-shadow: 6px 6px 10px #888;
+  border: none;
 }
