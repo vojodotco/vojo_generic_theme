@@ -1,0 +1,615 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Started | vojo.co</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://dev.vojo.co/sites/all/themes/vojo_generic/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/modules/aggregator/aggregator.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/modules/node/node.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/modules/system/defaults.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/modules/system/system.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/modules/system/system-menus.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/modules/user/user.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/cck/theme/content-module.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/ctools/css/ctools.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/filefield/filefield.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/l10n_client/l10n_client.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/panels/css/panels.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/tagadelic/tagadelic.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/custom/vojo/css/vojo-site-header.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/patched/og/theme/og.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/cck/modules/fieldgroup/fieldgroup.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/views/css/views.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/modules/contrib/panels/plugins/layouts/onecol/onecol.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/html-reset.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/wireframes.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/page-backgrounds.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/tabs.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/messages.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/pages.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/block-editing.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/blocks.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/navigation.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/panels-styles.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/views-styles.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/nodes.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/comments.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/forms.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/fields.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/openlayers.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/layout-liquid.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/bootstrap.min.css?j" />
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/bootstrap-responsive.min.css?j" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/ie.css?j" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="http://dev.vojo.co/sites/all/themes/vojo_generic/css/ie6.css?j" />
+<![endif]-->
+    <script type="text/javascript" src="http://vojo.co/sites/all/modules/contrib/jquery_update/replace/jquery.min.js?j"></script>
+<script type="text/javascript" src="/misc/drupal.js?j"></script>
+<script type="text/javascript" src="http://vojo.co/sites/all/modules/contrib/l10n_client/jquery.hotkeys.js?j"></script>
+<script type="text/javascript" src="http://vojo.co/sites/all/modules/contrib/l10n_client/jquery.cookie.js?j"></script>
+<script type="text/javascript" src="http://vojo.co/sites/all/modules/contrib/l10n_client/l10n_client.js?j"></script>
+<script type="text/javascript" src="/misc/textarea.js?j"></script>
+<script type="text/javascript" src="http://vojo.co/sites/all/modules/contrib/panels/js/panels.js?j"></script>
+<script type="text/javascript" src="http://vojo.co/sites/all/modules/patched/og/og.js?j"></script>
+<script type="text/javascript" src="http://vojo.co/sites/all/themes/vojo_generic/js/bootstrap.min.js?j"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "audiorecorderfield_path": "sites/all/modules/patched/audiorecorderfield" });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front logged-in no-sidebars i18n-en-us page-trynow section-trynow page-panels">
+
+    <div id="vojo-page">
+      <a id="beta" href="http://dev.vojo.co/">beta</a>
+<div id="vojo-site-header">
+  <div class="container">
+    <a  id="vojo-logo" href="http://dev.vojo.co/"><img src="http://vojo.co/sites/all/themes/vojo_generic/images/vojo/logo-top-header.png" alt="Vojo home page" /></a>
+    <div class="block-voip-number">(888) 821-7563</div>
+    <div class="block-locale"><ul><li class="en-us first active"><a href="http://dev.vojo.co/en/trynow" class="language-link active">English</a></li>
+<li class="es"><a href="http://dev.vojo.co/es/trynow" class="language-link">Español</a></li>
+<li class="pt-br last"><a href="http://dev.vojo.co/pt-br/trynow" class="language-link">Português</a></li>
+</ul></div>    <div id="vojo-user-menu" class="vojo-header-menu"><ul id="vojo-user-links" class="vojo-header-links"><li class="menu-parent"><span>squiggy</span><ul class="submenu"><li class="menu-21 first menu-item-1 menu-users-squiggy"><a href="http://dev.vojo.co/en/users/squiggy">My account</a></li></li><li class="menu-1123 menu-item-2 menu-og"><a href="http://dev.vojo.co/en/og">All Groups</a></li><li class="menu-4 menu-item-3 menu-logout"><a href="http://dev.vojo.co/en/logout">Log out</a></li></ul></li></ul></div>  </div>
+</div> <!-- /#vojo-top-header -->
+                      <div id="vojo-main-wrapper">
+            <div class="container">
+
+                <div class="row">
+            
+                    <div id="vojo-content" class="span12">
+                          
+                
+                                                                            <h1 class="title">Getting Started</h1>
+                                                                
+                        <div id="vojo-content-area">
+                            <div class="panel-display panel-1col clear-block" >
+  <div class="panel-panel panel-col">
+    <div><div class="panels_pane panel-pane pane-node" >
+  
+  
+  
+  <div class="pane-content">
+    <div id="node-12025" class="node node-type-page node-by-viewer build-mode-full clearfix">
+  
+  
+  
+  
+  <div class="content">
+    <div id="get-started-box">
+<h2>Start sharing stories now</h2>
+<h3>To create an account just call <strong>(617) 286-5071</strong></h3>
+<ul id="get-started-steps">
+<li class="one">
+<img src="http://localhost/sites/all/themes/vojo_generic/images/get-started-img1.png" alt="step one" /><br />
+<span class="icon"></span>
+<h3>Post your first story</h3>
+<p> <strong>Call</strong> (617) 286-5071. <strong>Press 2</strong> after the welcome message and <strong>leave an audio story</strong>. Hangup or press # to save the story. </p>
+</li>
+<li class="two">
+<img src="http://localhost/sites/all/themes/vojo_generic/images/get-started-img2.png" alt="step one" /><br />
+<span class="icon"></span>
+<h3>Create your username and password</h3>
+<p> After you post your first audio story, you’ll receive an SMS reply asking you to select a username. After entering your username, you will receive a confirmation with your new username and password. </p>
+</li>
+<li class="three">
+<img src="http://localhost/sites/all/themes/vojo_generic/images/get-started-img3.png" alt="step one" /><br />
+<span class="icon"></span>
+<h3>Create and or join a group </h3>
+<p> Now that you created an account, you can start posting stories! Feel free to create your own group or join an existing one. See the user manual for a list of configurable options for your group! </p>
+</li>
+</ul>
+</div>
+  </div>
+
+  </div><!-- /.node -->
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+                        </div>
+                    
+                    </div>
+                                    
+            </div>
+            
+        </div>
+    
+                <div id="vojo-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="region region-footer">
+  <div id="block-menu-menu-vojo-social-links" class="block block-menu first region-odd odd region-count-1 count-1">
+  
+  <div class="content">
+    <ul class="menu"><li id="social-link-twitter" class="leaf"><a href="https://twitter.com/vojoco" title="">Twitter</a></li>
+</ul>  </div>
+
+  </div><!-- /.block -->
+<div id="block-search-0" class="block block-search region-even even region-count-2 count-2">
+      <h2 class="title">Search</h2>
+  
+  <div class="content">
+    <form action="/en/trynow"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div><div class="container-inline">
+  <div class="form-item" id="edit-search-block-form-1-wrapper">
+ <label for="edit-search-block-form-1">Search this site: </label>
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-d2d5c128d4e2cbce228b16c8fdd9dffe" value="form-d2d5c128d4e2cbce228b16c8fdd9dffe"  />
+<input type="hidden" name="form_token" id="edit-search-block-form-form-token" value="626997400829e5e1248a1a0e85c3d97a"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+</div>
+
+</div></form>
+  </div>
+
+  </div><!-- /.block -->
+<div id="block-vojo-powered-by" class="block block-vojo region-odd odd region-count-3 count-3">
+  
+  <div class="content">
+    <a href="http://vozmob.net"><img src="http://vojo.co/sites/all/modules/custom/vojo/img/powered-by-vozmob.gif" alt="" title="" width="173" height="42" /></a> <a href="http://drupal.org"><img src="http://vojo.co/sites/all/modules/custom/vojo/img/powered-by-drupal.png" alt="" title="" width="135" height="42" /></a> <a href="http://civic.mit.edu"><img src="http://vojo.co/sites/all/modules/custom/vojo/img/powered-by-c4cm.gif" alt="" title="" width="154" height="42" /></a>  </div>
+
+  </div><!-- /.block -->
+<div id="block-vojo-license" class="block block-vojo last region-even even region-count-4 count-4">
+  
+  <div class="content">
+    <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"><img src="http://vojo.co/sites/all/modules/custom/vojo/img/copy-left.png" alt="" title="" width="81" height="31" /></a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons</a>  </div>
+
+  </div><!-- /.block -->
+</div><!-- /.region -->
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            
+        
+      <div id='l10n-client' class='hidden'>
+        <div class='labels'>
+          <span class='toggle'>Translate Text</span>
+          <div class='label strings'><h2>Page Text</h2></div>
+          <div class='label source'><h2>Source</h2></div>
+          <div class='label translation'><h2>Translation to <em>English</em></h2></div>
+        </div>
+        <div id='l10n-client-string-select'>
+          <ul class='string-list'><li class='untranslated'></li>
+<li class='untranslated'>!long-month-name June</li>
+<li class='untranslated'>!title: !required</li>
+<li class='untranslated'>%1</li>
+<li class='untranslated'>[title]
+[body]</li>
+<li class='untranslated'>A %type has been flagged with %name</li>
+<li class='untranslated'>A %type has been unflagged with %name</li>
+<li class='untranslated'>A blog entry is a single post to an online journal, or blog.</li>
+<li class='untranslated'>A new user is added as an admin to a group</li>
+<li class='untranslated'>A normal non-JavaScript request will be made and the current page will be ...</li>
+<li class='untranslated'>A panel layout broken up into rows and columns.</li>
+<li class='untranslated'>A user changes their subscription to a group</li>
+<li class='untranslated'>A user deletes their subscription to a group</li>
+<li class='untranslated'>A user has been approved for membership to a group</li>
+<li class='untranslated'>A user is denied membership to a group</li>
+<li class='untranslated'>A user requests membership to a group</li>
+<li class='untranslated'>AHAH callback to display action form on VBO action page.</li>
+<li class='untranslated'>AJAX callback to update selection.</li>
+<li class='untranslated'>AND</li>
+<li class='untranslated'>About this Group</li>
+<li class='untranslated'>Access</li>
+<li class='untranslated'>Access rules are used to test if the page is accessible and any menu items ...</li>
+<li class='untranslated'>Access will be granted to users with any of the specified roles.</li>
+<li class='untranslated'>Access will be granted to users with the specified permission string.</li>
+<li class='untranslated'>Add a node from your site as content.</li>
+<li class='untranslated'>Add additional context objects to this variant that can be used by the ...</li>
+<li class='untranslated'>Add content items and change their location with a drag and drop interface.</li>
+<li class='untranslated'>Administrator created pages that have a URL path, access control and ...</li>
+<li class='untranslated'>Advanced Backup Tab</li>
+<li class='untranslated'>After a user account has been created</li>
+<li class='untranslated'>After a user has been deleted</li>
+<li class='untranslated'>After a user has logged in</li>
+<li class='untranslated'>After a user has logged out</li>
+<li class='untranslated'>After a user's profile has been updated</li>
+<li class='untranslated'>After deleting a comment</li>
+<li class='untranslated'>After deleting a post</li>
+<li class='untranslated'>After deleting a term</li>
+<li class='untranslated'>After saving a new comment</li>
+<li class='untranslated'>After saving a new post</li>
+<li class='untranslated'>After saving a new term to the database</li>
+<li class='untranslated'>After saving an updated comment</li>
+<li class='untranslated'>After saving an updated post</li>
+<li class='untranslated'>After saving an updated term to the database</li>
+<li class='untranslated'>Aggregator item</li>
+<li class='untranslated'>Ajax callback for view loading.</li>
+<li class='untranslated'>All</li>
+<li class='untranslated'>An AJAX request will be made and degrades to type "Normal link" if ...</li>
+<li class='untranslated'>An exposed form that only renders a view if the form contains user input.</li>
+<li class='untranslated'>Argument</li>
+<li class='untranslated'>Arguments</li>
+<li class='untranslated'>Attachment</li>
+<li class='untranslated'>Attachments added to other displays to achieve multiple views in the same ...</li>
+<li class='untranslated'>Autocomplete taxonomy</li>
+<li class='untranslated'>Automatically backup up your database on a regular schedule using cron.</li>
+<li class='untranslated'>Backup and Migrate makes the task of backing up your Drupal database and ...</li>
+<li class='untranslated'>Basic</li>
+<li class='untranslated'>Basic exposed form</li>
+<li class='untranslated'>Beep sound</li>
+<li class='untranslated'>Block</li>
+<li class='untranslated'>Blog entry</li>
+<li class='untranslated'>Blogs</li>
+<li class='untranslated'>Body</li>
+<li class='untranslated'>Bulk Operations</li>
+<li class='untranslated'>CSV file</li>
+<li class='untranslated'>Change general settings about this variant.</li>
+<li class='untranslated'>Change layout</li>
+<li class='untranslated'>Change the layout of this panel.</li>
+<li class='untranslated'>Choose layout</li>
+<li class='untranslated'>Clone</li>
+<li class='untranslated'>Cloud</li>
+<li class='untranslated'>Columns: 1</li>
+<li class='untranslated'>Comment</li>
+<li class='untranslated'>Comments</li>
+<li class='untranslated'>Comments are responses to node content.</li>
+<li class='untranslated'>Compose tips</li>
+<li class='untranslated'>Confirmation form</li>
+<li class='untranslated'>Contains rows in contexts.</li>
+<li class='untranslated'>Content</li>
+<li class='untranslated'>Content has been flagged with any flag</li>
+<li class='untranslated'>Content has been unflagged with any flag</li>
+<li class='untranslated'>Content pane</li>
+<li class='untranslated'>Context</li>
+<li class='untranslated'>Contexts</li>
+<li class='untranslated'>Control the criteria used to decide whether or not this variant is used.</li>
+<li class='untranslated'>Control what users can access this page.</li>
+<li class='untranslated'>Core</li>
+<li class='untranslated'>Create a new group.</li>
+<li class='untranslated'>Create a new page</li>
+<li class='untranslated'>Create content</li>
+<li class='untranslated'>Create story</li>
+<li class='untranslated'>Creative Commons</li>
+<li class='untranslated'>Current group node from context</li>
+<li class='untranslated'>Custom</li>
+<li class='untranslated'>Custom pages</li>
+<li class='untranslated'>Custom text</li>
+<li class='untranslated'>DOC file</li>
+<li class='untranslated'>Data export</li>
+<li class='untranslated'>Data layer for OpenLayers maps.</li>
+<li class='untranslated'>Default</li>
+<li class='untranslated'>Default settings for this view.</li>
+<li class='untranslated'>Defaults</li>
+<li class='untranslated'>Destinations</li>
+<li class='untranslated'>Destinations are the places you can save your backup files to or them load ...</li>
+<li class='untranslated'>Dialplan script used in Voip Drupal calls.</li>
+<li class='untranslated'>Display a limited number items that this view might find.</li>
+<li class='untranslated'>Display a specified number of items</li>
+<li class='untranslated'>Display all items</li>
+<li class='untranslated'>Display all items that this view might find</li>
+<li class='untranslated'>Display all values</li>
+<li class='untranslated'>Display empty text</li>
+<li class='untranslated'>Display the aggregator item using the data from the original source.</li>
+<li class='untranslated'>Display the comment as RSS.</li>
+<li class='untranslated'>Display the comment with standard comment view.</li>
+<li class='untranslated'>Display the node with standard node view.</li>
+<li class='untranslated'>Display the view as a block.</li>
+<li class='untranslated'>Display the view as a comma separated list.</li>
+<li class='untranslated'>Display the view as a doc file.</li>
+<li class='untranslated'>Display the view as a feed, such as an RSS feed.</li>
+<li class='untranslated'>Display the view as a page, with a URL and menu links.</li>
+<li class='untranslated'>Display the view as a txt file.</li>
+<li class='untranslated'>Display the view as a xls file.</li>
+<li class='untranslated'>Displays a View as an OpenLayers map.</li>
+<li class='untranslated'>Displays rows as an HTML list.</li>
+<li class='untranslated'>Displays rows in a grid.</li>
+<li class='untranslated'>Displays rows in a table.</li>
+<li class='untranslated'>Displays rows one after another.</li>
+<li class='untranslated'>Displays rows with checkmarks for bulk actions.</li>
+<li class='untranslated'>Displays the default summary as a cloud of links.</li>
+<li class='untranslated'>Displays the default summary as a list.</li>
+<li class='untranslated'>Displays the fields in a panel rather than using a template.</li>
+<li class='untranslated'>Displays the fields with an optional template.</li>
+<li class='untranslated'>Displays the summary unformatted, with option for one after another or inline.</li>
+<li class='untranslated'>Displays the views data as a cloud of items.</li>
+<li class='untranslated'>Do not pass admin strings for translation.</li>
+<li class='untranslated'>Each schedule will run a maximum of once per cron run, so they will not ...</li>
+<li class='untranslated'>Edit comment</li>
+<li class='untranslated'>Edit name, path and other basic settings for the page.</li>
+<li class='untranslated'>Empty display extender</li>
+<li class='untranslated'>Empty text</li>
+<li class='untranslated'>Enter the terms you wish to search for.</li>
+<li class='untranslated'>Existing node</li>
+<li class='untranslated'>Export</li>
+<li class='untranslated'>Export the view results to a file. Can handle very large result sets.</li>
+<li class='untranslated'>Export this page as code that can be imported or embedded into a module.</li>
+<li class='untranslated'>FFmpeg Wrapper</li>
+<li class='untranslated'>Feature story</li>
+<li class='untranslated'>Feed</li>
+<li class='untranslated'>Feed aggregator</li>
+<li class='untranslated'>Field</li>
+<li class='untranslated'>Fields</li>
+<li class='untranslated'>File download</li>
+<li class='untranslated'>Files can be saved to a directory on your web server, downloaded to your ...</li>
+<li class='untranslated'>Filter</li>
+<li class='untranslated'>Filters</li>
+<li class='untranslated'>Fixed entry</li>
+<li class='untranslated'>Flaggable node</li>
+<li class='untranslated'>Flaggable user</li>
+<li class='untranslated'>Footer</li>
+<li class='untranslated'>For every page request Drupal steps through this Theme Switching Rule ...</li>
+<li class='untranslated'>Front slideshow</li>
+<li class='untranslated'>General</li>
+<li class='untranslated'>Generates an RSS feed from a view.</li>
+<li class='untranslated'>Get a preview of what this variant will look like.</li>
+<li class='untranslated'>Grammar script</li>
+<li class='untranslated'>Grammar script allowing the keypad input of digits, star and hash</li>
+<li class='untranslated'>Grid</li>
+<li class='untranslated'>Group</li>
+<li class='untranslated'>Group nodes</li>
+<li class='untranslated'>HTML List</li>
+<li class='untranslated'>Handles incoming calls from Tropo.</li>
+<li class='untranslated'>Handles incoming calls from Twilio.</li>
+<li class='untranslated'>Header</li>
+<li class='untranslated'>Hide view / Page not found (404)</li>
+<li class='untranslated'>Home</li>
+<li class='untranslated'>Input required</li>
+<li class='untranslated'>Internationalization Views</li>
+<li class='untranslated'>Is available as content for a panel or dashboard display.</li>
+<li class='untranslated'>JavaScript toggle</li>
+<li class='untranslated'>Jump menu</li>
+<li class='untranslated'>Just send a sms or mms (picture message) from your phone to @email</li>
+<li class='untranslated'>Layout</li>
+<li class='untranslated'>Link</li>
+<li class='untranslated'>List</li>
+<li class='untranslated'>Log out</li>
+<li class='untranslated'>Make a copy of this page</li>
+<li class='untranslated'>Makes the view results available as a context for use in Panels and other ...</li>
+<li class='untranslated'>Masquerade autocomplete</li>
+<li class='untranslated'>Menu</li>
+<li class='untranslated'>Menu script of the rows.</li>
+<li class='untranslated'>Middle column</li>
+<li class='untranslated'>Miscellaneous</li>
+<li class='untranslated'>Move content from old layout</li>
+<li class='untranslated'>My Unread</li>
+<li class='untranslated'>My account</li>
+<li class='untranslated'>My groups</li>
+<li class='untranslated'>Navigation Bar</li>
+<li class='untranslated'>New user joins a group</li>
+<li class='untranslated'>Nid</li>
+<li class='untranslated'>No caching of Views data.</li>
+<li class='untranslated'>No style</li>
+<li class='untranslated'>Node</li>
+<li class='untranslated'>Node ID from URL</li>
+<li class='untranslated'>Node title autocomplete</li>
+<li class='untranslated'>Nodes</li>
+<li class='untranslated'>Nodes are a Drupal site's primary content.</li>
+<li class='untranslated'>None</li>
+<li class='untranslated'>Normal</li>
+<li class='untranslated'>Normal link</li>
+<li class='untranslated'>Numeric</li>
+<li class='untranslated'>OR</li>
+<li class='untranslated'>OpenLayers AHAH</li>
+<li class='untranslated'>OpenLayers Data</li>
+<li class='untranslated'>OpenLayers Map</li>
+<li class='untranslated'>Options</li>
+<li class='untranslated'>Or call @phone to record your audio story</li>
+<li class='untranslated'>Overridden</li>
+<li class='untranslated'>PHP</li>
+<li class='untranslated'>PHP Code</li>
+<li class='untranslated'>Page</li>
+<li class='untranslated'>Page Closure</li>
+<li class='untranslated'>Paged output, full Drupal style</li>
+<li class='untranslated'>Paged output, full pager</li>
+<li class='untranslated'>Paged output, mini pager</li>
+<li class='untranslated'>Panel</li>
+<li class='untranslated'>Panel content</li>
+<li class='untranslated'>Panel fields</li>
+<li class='untranslated'>Panel settings</li>
+<li class='untranslated'>Permission</li>
+<li class='untranslated'>Plays beep sound</li>
+<li class='untranslated'>Post date</li>
+<li class='untranslated'>Post your story to this group!</li>
+<li class='untranslated'>Preview</li>
+<li class='untranslated'>Profiles</li>
+<li class='untranslated'>Profiles are saved backup settings. Profiles store your table exclusion ...</li>
+<li class='untranslated'>Provide default argument</li>
+<li class='untranslated'>Provide this page a visible menu or a menu tab.</li>
+<li class='untranslated'>Provides Data to Power an OpenLayers map.</li>
+<li class='untranslated'>Puts all of the results into a select box and allows the user to go to a ...</li>
+<li class='untranslated'>Query will be generated and run using the Drupal database API.</li>
+<li class='untranslated'>Quick Backup Tab</li>
+<li class='untranslated'>RSD</li>
+<li class='untranslated'>RSS Feed</li>
+<li class='untranslated'>RSS feed</li>
+<li class='untranslated'>Raw value from URL</li>
+<li class='untranslated'>Relationship</li>
+<li class='untranslated'>Relationships</li>
+<li class='untranslated'>Remove all changes to this page and revert to the version in code.</li>
+<li class='untranslated'>Renders a panel normally. This is the most common option.</li>
+<li class='untranslated'>Restore Tab</li>
+<li class='untranslated'>Revert</li>
+<li class='untranslated'>Role</li>
+<li class='untranslated'>Rows in a VoIP script.</li>
+<li class='untranslated'>SQL Query</li>
+<li class='untranslated'>Save string</li>
+<li class='untranslated'>Scheduling</li>
+<li class='untranslated'>Script name</li>
+<li class='untranslated'>Search</li>
+<li class='untranslated'>Search this site</li>
+<li class='untranslated'>Selection rules</li>
+<li class='untranslated'>Send a story via MMS or e-mail.</li>
+<li class='untranslated'>Send to phone</li>
+<li class='untranslated'>SendTo autocomplete</li>
+<li class='untranslated'>SendTo js</li>
+<li class='untranslated'>Sequential script of the rows.</li>
+<li class='untranslated'>Settings</li>
+<li class='untranslated'>Sidebar</li>
+<li class='untranslated'>Similar to the above: adds the terms term1 and term2 to the node, but uses ...</li>
+<li class='untranslated'>Simple time-based caching of data.</li>
+<li class='untranslated'>Single column</li>
+<li class='untranslated'>Sort criteria</li>
+<li class='untranslated'>Sort criterion</li>
+<li class='untranslated'>Standard</li>
+<li class='untranslated'>Standard VoIP script</li>
+<li class='untranslated'>Storage</li>
+<li class='untranslated'>Story is mapped</li>
+<li class='untranslated'>Summary, sorted ascending</li>
+<li class='untranslated'>Summary, sorted by number of records ascending</li>
+<li class='untranslated'>Summary, sorted by number of records descending</li>
+<li class='untranslated'>Summary, sorted descending</li>
+<li class='untranslated'>TXT file</li>
+<li class='untranslated'>Table</li>
+<li class='untranslated'>Tags</li>
+<li class='untranslated'>Taxonomy Term ID from URL</li>
+<li class='untranslated'>Taxonomy term</li>
+<li class='untranslated'>Taxonomy term (i18n)</li>
+<li class='untranslated'>Teaser</li>
+<li class='untranslated'>The default panel rendering style; displays each pane with a separator.</li>
+<li class='untranslated'>The user will be taken to a confirmation form on a separate page to ...</li>
+<li class='untranslated'>Time-based</li>
+<li class='untranslated'>Title</li>
+<li class='untranslated'>Translate strings</li>
+<li class='untranslated'>Triggers are system events, such as when new content is added or when a ...</li>
+<li class='untranslated'>True</li>
+<li class='untranslated'>Título</li>
+<li class='untranslated'>Unformatted</li>
+<li class='untranslated'>Upload a backup and migrate backup file. The restore function will not ...</li>
+<li class='untranslated'>Use Drupal core t() function. Not recommended, as it doesn't support ...</li>
+<li class='untranslated'>Use PHP code to determine whether a view should be cached.</li>
+<li class='untranslated'>Use PHP code to grant access.</li>
+<li class='untranslated'>Use the locale system as implemented by the Views translation module.</li>
+<li class='untranslated'>Use the locale to interpret arguments.</li>
+<li class='untranslated'>Use the mini pager output.</li>
+<li class='untranslated'>Use this form to run manual backups of your database with more advanced ...</li>
+<li class='untranslated'>Use this form to run simple manual backups of your database. Visit the ...</li>
+<li class='untranslated'>Use this to add the terms term1 and term2 to the node.
+                    ...</li>
+<li class='untranslated'>User</li>
+<li class='untranslated'>User ID from URL</li>
+<li class='untranslated'>User ID from logged in user</li>
+<li class='untranslated'>User account</li>
+<li class='untranslated'>User autocomplete</li>
+<li class='untranslated'>User list</li>
+<li class='untranslated'>Userreference autocomplete</li>
+<li class='untranslated'>Users</li>
+<li class='untranslated'>Users who have created accounts on your site.</li>
+<li class='untranslated'>VBO action form</li>
+<li class='untranslated'>VBO select handler</li>
+<li class='untranslated'>View output for VoIP call.</li>
+<li class='untranslated'>View user profile.</li>
+<li class='untranslated'>Views</li>
+<li class='untranslated'>VoIP</li>
+<li class='untranslated'>VoIP Twilio call handler</li>
+<li class='untranslated'>VoIP rows</li>
+<li class='untranslated'>VoIP script with IVR</li>
+<li class='untranslated'>Voip Script</li>
+<li class='untranslated'>Voip Tropo call handler</li>
+<li class='untranslated'>When a comment is being viewed by an authenticated user</li>
+<li class='untranslated'>When a user's profile is being viewed</li>
+<li class='untranslated'>When an SMS message with any discriminator is received.</li>
+<li class='untranslated'>When an SMS message with the %discriminator discriminator is received.</li>
+<li class='untranslated'>When content is viewed by an authenticated user</li>
+<li class='untranslated'>When cron runs</li>
+<li class='untranslated'>When either saving a new post or updating an existing post</li>
+<li class='untranslated'>When forwarding a node using 'Send To'</li>
+<li class='untranslated'>Will be available to all users.</li>
+<li class='untranslated'>XLS file</li>
+<li class='untranslated'>XML file</li>
+<li class='untranslated'>You can create new profiles using the add profiles tab or by checking the ...</li>
+<li class='untranslated'>arguments</li>
+<li class='untranslated'>audiorecorderfield_file_preview</li>
+<li class='untranslated'>audiorecorderfield_recorder_reload</li>
+<li class='untranslated'>empty text</li>
+<li class='untranslated'>field</li>
+<li class='untranslated'>fields</li>
+<li class='untranslated'>file_receive</li>
+<li class='untranslated'>filter</li>
+<li class='untranslated'>filters</li>
+<li class='untranslated'>footer</li>
+<li class='untranslated'>header</li>
+<li class='untranslated'>help page</li>
+<li class='untranslated'>manual backups</li>
+<li class='untranslated'>more</li>
+<li class='untranslated'>node/[nid]</li>
+<li class='untranslated'>pm</li>
+<li class='untranslated'>relationships</li>
+<li class='untranslated'>restore feature</li>
+<li class='untranslated'>settings profiles</li>
+<li class='untranslated'>sort criteria</li>
+<li class='untranslated'>sort criterion</li>
+<li class='untranslated'>view story</li></ul>
+          <form action="/en/trynow"  accept-charset="UTF-8" method="post" id="l10n-client-search-form">
+<div><div class="form-item" id="edit-search-wrapper">
+ <input type="text" maxlength="128" name="search" id="edit-search" size="60" value="" class="form-text string-search" />
+</div>
+<input type="submit" name="op" id="l10n-client-search-filter-clear" value="X"  class="form-submit form-submit" />
+<input type="hidden" name="form_build_id" id="form-aa54611e8b2c8a593be749612bed1fdd" value="form-aa54611e8b2c8a593be749612bed1fdd"  />
+<input type="hidden" name="form_token" id="edit-l10n-client-search-form-form-token" value="9f011cb22883c47bb9a5bdccdf2bb2cd"  />
+<input type="hidden" name="form_id" id="edit-l10n-client-search-form" value="l10n_client_search_form"  />
+
+</div></form>
+
+        </div>
+        <div id='l10n-client-string-editor'>
+          <div class='source'>
+            <div class='source-text'></div>
+          </div>
+          <div class='translation'>
+            <form action="/en/i18nstrings/save"  accept-charset="UTF-8" method="post" id="l10n-client-form">
+<div><div class="form-item" id="edit-target-wrapper">
+ <textarea cols="60" rows="6" name="target" id="edit-target"  class="form-textarea translation-target"></textarea>
+</div>
+<input type="submit" name="op" id="edit-save" value="Save translation"  class="form-submit" />
+<input type="hidden" name="textgroup" id="edit-textgroup" value="default"  class="source-textgroup" />
+<input type="submit" name="op" id="l10n-client-edit-copy" value="Copy source"  class="form-submit form-submit edit-copy" />
+<input type="submit" name="op" id="l10n-client-edit-clear" value="Clear"  class="form-submit form-submit edit-clear" />
+<input type="hidden" name="form_build_id" id="form-50085f871e88167259e31ab2323024bc" value="form-50085f871e88167259e31ab2323024bc"  />
+<input type="hidden" name="form_token" id="edit-l10n-client-form-form-token" value="1a5131e7a8a4ccd70a5dfb24762d7a31"  />
+<input type="hidden" name="form_id" id="edit-l10n-client-form" value="l10n_client_form"  />
+
+</div></form>
+
+          </div>
+        </div>
+      </div>
+      <div id='l10n-client-data'><div><span class='source'></span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>!long-month-name June</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>!title: !required</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>%1</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>&lt;h3&gt;[title]&lt;/h3&gt;
+&lt;p&gt;[body]&lt;/p&gt;</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A %type has been flagged with %name</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A %type has been unflagged with %name</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A &lt;em&gt;blog entry&lt;/em&gt; is a single post to an online journal, or &lt;em&gt;blog&lt;/em&gt;.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A new user is added as an admin to a group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A normal non-JavaScript request will be made and the current page will be reloaded.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A panel layout broken up into rows and columns.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A user changes their subscription to a group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A user deletes their subscription to a group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A user has been approved for membership to a group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A user is denied membership to a group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>A user requests membership to a group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>AHAH callback to display action form on VBO action page.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>AJAX callback to update selection.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>AND</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>About this Group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Access</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Access rules are used to test if the page is accessible and any menu items associated with it are visible.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Access will be granted to users with any of the specified roles.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Access will be granted to users with the specified permission string.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Add a node from your site as content.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Add additional context objects to this variant that can be used by the content.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Add content items and change their location with a drag and drop interface.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Administrator created pages that have a URL path, access control and entries in the Drupal menu system.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Advanced Backup Tab</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After a user account has been created</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After a user has been deleted</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After a user has logged in</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After a user has logged out</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After a user's profile has been updated</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After deleting a comment</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After deleting a post</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After deleting a term</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After saving a new comment</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After saving a new post</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After saving a new term to the database</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After saving an updated comment</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After saving an updated post</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>After saving an updated term to the database</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Aggregator item</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Ajax callback for view loading.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>All</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>An AJAX request will be made and degrades to type "Normal link" if JavaScript is not available.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>An exposed form that only renders a view if the form contains user input.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Argument</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Arguments</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Attachment</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Attachments added to other displays to achieve multiple views in the same view.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Autocomplete taxonomy</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Automatically backup up your database on a regular schedule using &lt;a href="!cronurl"&gt;cron&lt;/a&gt;.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Backup and Migrate makes the task of backing up your Drupal database and migrating data from one Drupal install to another easier. It provides a function to backup the entire database to file or download, and to restore from a previous backup. You can also schedule the backup operation. Compression of backup files is also supported.  The database backup files created with this module can be imported into this or any other Drupal installation with the !restorelink, or you can use a database tool such as &lt;a href="!phpmyadminurl"&gt;phpMyAdmin&lt;/a&gt; or the mysql command line command.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Basic</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Basic exposed form</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Beep sound</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Block</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Blog entry</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Blogs</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Body</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Bulk Operations</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>CSV file</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Change general settings about this variant.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Change layout</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Change the layout of this panel.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Choose layout</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Clone</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Cloud</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Columns: 1</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Comment</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Comments</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Comments are responses to node content.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Compose tips</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Confirmation form</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Contains rows in contexts.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Content</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Content has been flagged with any flag</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Content has been unflagged with any flag</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Content pane</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Context</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Contexts</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Control the criteria used to decide whether or not this variant is used.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Control what users can access this page.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Core</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Create a new group.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Create a new page</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Create content</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Create story</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Creative Commons</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Current group node from context</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Custom</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Custom pages</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Custom text</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>DOC file</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Data export</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Data layer for OpenLayers maps.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Default</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Default settings for this view.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Defaults</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Destinations</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Destinations are the places you can save your backup files to or them load from.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Dialplan script used in Voip Drupal calls.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display a limited number items that this view might find.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display a specified number of items</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display all items</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display all items that this view might find</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display all values</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display empty text</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the aggregator item using the data from the original source.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the comment as RSS.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the comment with standard comment view.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the node with standard node view.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the view as a block.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the view as a comma separated list.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the view as a doc file.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the view as a feed, such as an RSS feed.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the view as a page, with a URL and menu links.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the view as a txt file.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Display the view as a xls file.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays a View as an OpenLayers map.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays rows as an HTML list.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays rows in a grid.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays rows in a table.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays rows one after another.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays rows with checkmarks for bulk actions.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays the default summary as a cloud of links.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays the default summary as a list.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays the fields in a panel rather than using a template.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays the fields with an optional template.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays the summary unformatted, with option for one after another or inline.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Displays the views data as a cloud of items.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Do not pass admin strings for translation.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Each schedule will run a maximum of once per cron run, so they will not run more frequently than your cron is configured to run. If you specify a number of backups to keep for a schedule, old backups will be deleted as new ones created. &lt;strong&gt;If specifiy a number of files to keep other backup files in that schedule's destination will get deleted&lt;/strong&gt;.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Edit comment</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Edit name, path and other basic settings for the page.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Empty display extender</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Empty text</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Enter the terms you wish to search for.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Existing node</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Export</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Export the view results to a file. Can handle very large result sets.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Export this page as code that can be imported or embedded into a module.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>FFmpeg Wrapper</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Feature story</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Feed</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Feed aggregator</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Field</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Fields</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>File download</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Files can be saved to a directory on your web server, downloaded to your desktop or emailed to a specified email account. From the Destinations tab you can create, delete and edit destinations or list the files which have already been backed up to the available destinations.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Filter</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Filters</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Fixed entry</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Flaggable node</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Flaggable user</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Footer</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>For every page request Drupal steps through this Theme Switching Rule Chain until an activated rule matches or it reaches the end. If a rule matches, the theme associated with this rule will be applied to render the requested page.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Front slideshow</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>General</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Generates an RSS feed from a view.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Get a preview of what this variant will look like.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Grammar script</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Grammar script allowing the keypad input of digits, star and hash</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Grid</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Group nodes</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>HTML List</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Handles incoming calls from Tropo.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Handles incoming calls from Twilio.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Header</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Hide view / Page not found (404)</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Home</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Input required</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Internationalization Views</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Is available as content for a panel or dashboard display.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>JavaScript toggle</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Jump menu</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Just send a sms or mms (picture message) from your phone to &lt;em&gt;@email&lt;/em&gt;</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Layout</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Link</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>List</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Log out</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Make a copy of this page</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Makes the view results available as a context for use in Panels and other applications.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Masquerade autocomplete</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Menu</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Menu script of the rows.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Middle column</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Miscellaneous</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Move content from old layout</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>My Unread</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>My account</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>My groups</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Navigation Bar</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>New user joins a group</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Nid</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>No caching of Views data.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>No style</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Node</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Node ID from URL</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Node title autocomplete</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Nodes</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Nodes are a Drupal site's primary content.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>None</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Normal</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Normal link</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Numeric</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>OR</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>OpenLayers AHAH</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>OpenLayers Data</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>OpenLayers Map</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Options</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Or call &lt;em&gt;@phone&lt;/em&gt; to record your audio story</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Overridden</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>PHP</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>PHP Code</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Page</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Page Closure</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Paged output, full Drupal style</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Paged output, full pager</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Paged output, mini pager</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Panel</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Panel content</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Panel fields</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Panel settings</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Permission</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Plays beep sound</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Post date</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Post your story to this group!</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Preview</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Profiles</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Profiles are saved backup settings. Profiles store your table exclusion settings as well as your backup file name, compression and timestamp settings. You can use profiles in !schedulelink and for !manuallink.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Provide default argument</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Provide this page a visible menu or a menu tab.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Provides Data to Power an OpenLayers map.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Puts all of the results into a select box and allows the user to go to a different page based upon the results.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Query will be generated and run using the Drupal database API.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Quick Backup Tab</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>RSD</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>RSS Feed</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>RSS feed</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Raw value from URL</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Relationship</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Relationships</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Remove all changes to this page and revert to the version in code.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Renders a panel normally. This is the most common option.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Restore Tab</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Revert</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Role</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Rows in a VoIP script.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>SQL Query</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Save string</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Scheduling</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Script name</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Search</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Search this site</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Selection rules</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Send a story via MMS or e-mail.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Send to phone</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>SendTo autocomplete</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>SendTo js</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Sequential script of the rows.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Settings</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Sidebar</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Similar to the above: adds the terms &lt;em&gt;term1&lt;/em&gt; and &lt;em&gt;term2&lt;/em&gt; to the node, but uses the vocabulary with the vocabulary id &lt;em&gt;v&lt;/em&gt;. For example &lt;em&gt;taxonomy[3]&lt;/em&gt; will chose only terms from the vocabulary which id is 3.&lt;br /&gt;
+                      In case some of the terms do not exist already, the behavior will depend on whether the vocabulary is a free tagging vocabulary or not. If it is a free tagging vocabulary, the term will be added, otherwise, it will be quietly ommitted</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Simple time-based caching of data.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Single column</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Sort criteria</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Sort criterion</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Standard</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Standard VoIP script</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Storage</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Story is mapped</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Summary, sorted ascending</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Summary, sorted by number of records ascending</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Summary, sorted by number of records descending</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Summary, sorted descending</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>TXT file</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Table</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Tags</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Taxonomy Term ID from URL</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Taxonomy term</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Taxonomy term (i18n)</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Teaser</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>The default panel rendering style; displays each pane with a separator.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>The user will be taken to a confirmation form on a separate page to confirm the flag.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Time-based</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Title</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Translate strings</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Triggers are system events, such as when new content is added or when a user logs in. Trigger module combines these triggers with actions (functional tasks), such as unpublishing content or e-mailing an administrator. The &lt;a href="@url"&gt;Actions settings page&lt;/a&gt; contains a list of existing actions and provides the ability to create and configure additional actions.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>True</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Título</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Unformatted</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Upload a backup and migrate backup file. The restore function will not work with database dumps from other sources such as phpMyAdmin.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use Drupal core t() function. Not recommended, as it doesn't support updates to existing strings.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use PHP code to determine whether a view should be cached.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use PHP code to grant access.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use the locale system as implemented by the Views translation module.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use the locale to interpret arguments.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use the mini pager output.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use this form to run manual backups of your database with more advanced options. If you have any !profilelink saved you can load those settings. You can save any of the changes you make to these settings as a new settings profile.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use this form to run simple manual backups of your database. Visit the !helppage for more help using this module</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Use this to add the terms &lt;em&gt;term1&lt;/em&gt; and &lt;em&gt;term2&lt;/em&gt; to the node.&lt;br /&gt;
+                      Both of the terms should already exist. In case they do not exist already, they will be quietly ommitted</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>User</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>User ID from URL</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>User ID from logged in user</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>User account</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>User autocomplete</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>User list</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Userreference autocomplete</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Users</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Users who have created accounts on your site.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>VBO action form</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>VBO select handler</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>View output for VoIP call.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>View user profile.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Views</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>VoIP</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>VoIP Twilio call handler</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>VoIP rows</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>VoIP script with IVR</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Voip Script</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Voip Tropo call handler</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>When a comment is being viewed by an authenticated user</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>When a user's profile is being viewed</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>When an SMS message with any discriminator is received.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>When an SMS message with the %discriminator discriminator is received.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>When content is viewed by an authenticated user</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>When cron runs</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>When either saving a new post or updating an existing post</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>When forwarding a node using 'Send To'</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>Will be available to all users.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>XLS file</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>XML file</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>You can create new profiles using the add profiles tab or by checking the "Save these settings" button on the advanced backup page.</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>arguments</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>audiorecorderfield_file_preview</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>audiorecorderfield_recorder_reload</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>empty text</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>field</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>fields</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>file_receive</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>filter</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>filters</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>footer</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>header</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>help page</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>manual backups</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>more</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>node/[nid]</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>pm</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>relationships</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>restore feature</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>settings profiles</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>sort criteria</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>sort criterion</span><span class='target'></span><span class='textgroup'>default</span></div><div><span class='source'>view story</span><span class='target'></span><span class='textgroup'>default</span></div></div>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "" : "http://stats.vojo.co/");_paq.push(["setSiteId", "2"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src="http://vojo.co/sites/default/files/piwik/piwik.js?j";s.parentNode.insertBefore(g,s);})();
+//--><!]]>
+</script>
+
+    </div>
+
+</body>
+</html>
