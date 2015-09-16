@@ -253,11 +253,7 @@
 .views_view {
     position: relative;
 }
-.feed-icon, .view-display-id-vojo_term_browse_stories_page .view-footer {
-    position: absolute;
-    top: -19px;
-    right: 5px;
-}
+
 
 /* empty map overlay */
 .view-vojo-group-stories-map .view-empty {
