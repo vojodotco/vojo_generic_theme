@@ -112,8 +112,8 @@
 //print "in group ".$vojo_group_nid;        
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 
 <head>
     <title><?php print $head_title; ?></title>
@@ -140,11 +140,14 @@
             </div>
         </div>
         <?php endif; ?>
-        <?php if($navigation) { ?>
+        <?php if($navigation || $group_menu) { ?>
         <div id="vojo-navigation">
             <div class="container">
                 <div class="row">
                     <div class="span8">
+                        <div id="block-vojo_og-generic-group-menu" class="block block-vojo_og">
+                            <?php if (!empty($group_menu)) print $group_menu; ?>
+                        </div>
                         <?php print $navigation ?>
                     </div>
                 </div>

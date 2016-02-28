@@ -181,12 +181,15 @@ div#site-name /* The name of the website */ {
   background-position: left -492px;
 }
 
-h1.title, /* The title of the page */
 h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
 h3.title /* Comment title */ {
   margin: 0;
 }
-
+h1.title {
+  font-size: 45px;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
 tr.even /* Some tables have rows marked even or odd. */ {
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
@@ -385,13 +388,11 @@ ul.links li {
 }
 /** Try now Button **/
 .huge-button, a.huge-button:link, a.huge-button:visited {
-  background-color: #ccc;
+  background-color: #F1F1F1;
   padding: 10px;
   display: block;
-  color: #fff;
-  text-shadow: 1px 1px 3px #333;
   font-size: 26px;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: center;
 }
 #vojo-trynow {
@@ -399,6 +400,89 @@ ul.links li {
   float: left;
 }
 #vojo-trynow .huge-button {
+}
+
+.pane-front-callin-now h2 {
+  background-color: #F1F1F1;
+  border-radius: 15px;
+  padding: 10px 30px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#get-started-box {
+  background-color: #F1F1F1;
+  border-radius: 24px;
+  padding: 20px;
+  overflow: hidden;
+  max-width: 940px;
+  margin-bottom: 20px;
+}
+#get-started-box h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+#get-started-box h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+}
+#get-started-box ul {
+  margin: 0;
+}
+#get-started-box ul li {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin: 2%;
+  padding: 2%;
+  background-color: #fff;
+  border-radius: 20px;
+  list-style-type: none;
+  width: 29%;
+  max-width: 280px;
+  min-height: 475px;
+  text-align: center;
+}
+#get-started-box ul li h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+#get-started-box ul li span.icon {
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin-top: 15px;
+}
+#get-started-box ul li.one span.icon {
+  background: url(../images/get-started-step1.png) no-repeat center top;
+}
+#get-started-box ul li.two span.icon {
+  background: url(../images/get-started-step2.png) no-repeat center top;
+}
+#get-started-box ul li.three span.icon {
+  background: url(../images/get-started-step3.png) no-repeat center top;
+}
+#vojo-site-header .primary-links {
+  float: right;
+  margin-right: 50px;
+  margin-top: 6px;
+}
+#vojo-site-header .primary-links li {
+  
+}
+#vojo-site-header .primary-links li a {
+  font-size: 16px;
+  color: #fff;
+}
+h1.welcome {
+  font-size: 22px;
+  font-weight: normal;
+  color: #999;
+  text-align: center;
+  margin: 0 0 30px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -421,6 +505,7 @@ Slideshow
 }
 #front-slideshow ul li.slide img {
   width: 100%;
+  float: left;
 }
 #front-slideshow ul li.views-row-first {
 }
@@ -483,7 +568,7 @@ Slideshow
 #front-logo {
   text-align: center;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .front .panel-pane {
   text-align: center;

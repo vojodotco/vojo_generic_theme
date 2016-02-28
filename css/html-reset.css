@@ -212,11 +212,11 @@ dd {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
-    color: #333333;
+    color: #2194E0;
 }
 
 a:visited {
-    color: #333333;
+    color: #0E76B7;
 }
 
 a:hover,
@@ -292,4 +292,27 @@ form {
 fieldset {
   margin: 1em 0;
   padding: 0.5em;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border-color: white;
+  border-color: none;
+}
+table tr td {
+  padding: 8px 12px;
+}
+tr.even, tr.odd {
+  border-bottom: 1px #fff solid;
+}
+tr.even {
+  background-color: #F5F5F5;
+}
+tr.odd {
+  background-color: #FAFAFA;
+}
+td.active {
+  background-color: #F5F5F5;
 }

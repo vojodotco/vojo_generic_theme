@@ -189,3 +189,8 @@ html.js input.throbbing {
 html.js fieldset.collapsed {
 	height: auto;
 }
+
+/** HACK (rahulb): hide membership moderation option (cause it doesnt work) **/
+#edit-og-selective-1-wrapper {
+  display: none;
+}

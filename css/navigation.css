@@ -105,3 +105,16 @@ li a.active {
 .item-list .pager li {
   padding: 0.35em;
 }
+body.section-users .item-list ul,
+dl.user-member ul.item-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+body.section-users .item-list ul li,
+dl.user-member ul.item-list li {
+  border-bottom: #ddd solid 1px;
+  margin-left: 0; 
+  padding: 8px 5px;
+  list-style: none;
+  list-style-image: none; 
+}

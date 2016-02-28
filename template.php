@@ -104,13 +104,15 @@ function vojo_generic_preprocess_page(&$vars, $hook) {
   $group_node = og_get_group_context();
   if ($group_node) {
     $vars['title_group'] = $group_node->title;
+    $navigation_block = module_invoke('vojo_og', 'block', 'view', 'generic-group-menu');
+    $vars['group_menu'] = $navigation_block['content'];
   }
   if (!empty($group_node) && $group_node->field_group_logo[0]['filepath']) {
     $image_path = imagecache_create_url('group_logo_large', $group_node->field_group_logo[0]['filepath']);
     $vars['group_logo'] = '<img src="'. $image_path .'" />';
   }
   if (!empty($group_node)) {
-    $vars['home_link'] = $vars['base_path'] . drupal_get_path_alias('node/'. $group_node->nid);
+    $vars['home_link'] = url('node/'. $group_node->nid);
   }
   // If the colorpicker module is present, the vozmob_og feature will provide a
   // field to the group node to select the background color of the header.
